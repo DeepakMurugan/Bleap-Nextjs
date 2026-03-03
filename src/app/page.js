@@ -12,6 +12,11 @@ import WhyChooseSplit from "./components/common/WhyChooseSplit";
 
 import SeoScroll5Steps from "./components/common/SeoScroll5Steps";
 import SeoScroll5Steps2 from "./components/common/SeoScroll5Steps2";
+import CenteredImage from "./components/common/CenteredImage";
+import CenterSector from "./components/common/CenterSector";
+import OtherServicesSlider from "./components/common/OtherServicesSlider";
+
+
 
 
 export default function Home() {
@@ -49,9 +54,17 @@ export default function Home() {
       <AboutPreview />
             <ClientsMarquee />
             <WhyChooseSplit />
+             
+             <CenteredImage  />
+
+
+
             <CaseStudiesSection />
 
+    <CenterSector />
            {/* < ServiceScrollShowcase /> */}
+
+           <OtherServicesSlider />
           <SeoScroll5Steps />
       <Portfolio />
       <ContactCTA />
