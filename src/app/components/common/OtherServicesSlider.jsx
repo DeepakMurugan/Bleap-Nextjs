@@ -22,7 +22,7 @@ const SERVICES = [
   // extra sample duplicates if you want more cards
   { id: "smm-2", title: "Social Media Marketing", linkText: "Know More", img: s4, href: "/services/social-media" },
   { id: "webdev-2", title: "Website Development", linkText: "Know More", img: s5, href: "/services/web-development" },
-  { id: "design-2", title: "Graphic Designing", linkText: "Know More", img: s6, href: "/services/graphic-design" },
+  { id: "design-2", title: "Graphic Designings", linkText: "Know More", img: s6, href: "/services/graphic-design" },
 ];
 
 export default function OtherServicesSlider() {
