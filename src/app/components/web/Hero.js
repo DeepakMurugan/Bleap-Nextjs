@@ -25,17 +25,19 @@ export default function Hero() {
     
               {/* ✅ Text section */}
               <div className="order-2 lg:order-1">
-                <p className="text-[16px] text-neutral-700  font-bold ">Why Choose Us?</p>
+                <p className="text-[16px] text-neutral-700  font-bold ">Built to perform! Design to convert! </p>
     
                 <h2 className="mt-3 text-[26px] md:text-[30px] font-semibold leading-snug text-neutral-900">
                   Our{" "}
                   <span className="text-[#ff6a00]">
-                    SEO Agency in Chennai
-                  </span>
+                    web Agency in Chennai  
+                  </span> 
+
+                    Ourasd sdss
                 </h2>
     
                 <p className="mt-4 max-w-[520px] text-[13px] md:text-[14px] leading-6 text-neutral-600">
-                SEO isn’t about chasing algorithms or quick ranking wins. It’s about building visibility that compounds over time. At Bleap, we approach SEO with a long-term mindset, focusing on relevance, trust, and consistency rather than shortcuts that fade. We study how your audience searches, how competitors rank, and where your website currently stands.
+Our websites are built to do more than exist online. We design digital experiences that strengthen your brand, improve discoverability, and directly contribute to measurable business growth.
                 </p>
               </div>
             </div>

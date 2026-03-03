@@ -1,4 +1,4 @@
-import Hero from "../components/home/Hero";
+import Hero from "../components/web/Hero";
 import Services from "../components/home/Services";
 import AboutPreview from "../components/home/AboutPreview";
 import Portfolio from "../components/home/Portfolio";
@@ -19,7 +19,7 @@ import OtherServicesSlider from "../components/common/OtherServicesSlider";
 
 
 
-export default function Team() {
+export default function web() {
 
 
   const FAQS = [
