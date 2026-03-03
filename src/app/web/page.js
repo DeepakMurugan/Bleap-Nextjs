@@ -1,16 +1,16 @@
-import Hero from "../components/web/Hero";
-import Services from "../components/home/Services";
+import Hero from "../components/web/hero";
+// import Services from "../components/home/Services";
 import AboutPreview from "../components/home/AboutPreview";
-import Portfolio from "../components/home/Portfolio";
-import ContactCTA from "../components/home/ContactCTA";
+// import Portfolio from "../components/home/Portfolio";
+// import ContactCTA from "../components/home/ContactCTA";
 import ClientsMarquee from "../components/common/ClientsMarquee";
 import CaseStudiesSection from "../components/common/CaseStudiesSection";
 import FaqSection from "../components/common/FaqSection";
 import LatestBlogsSection from "../components/common/LatestBlogsSection";
-import WhyChooseSplit from "../components/common/WhyChooseSplit";
+import WhyChooseSplit from "../components/web/whychoose";
 // import webDevImg from "../assets/sections/webdev.png";
 
-import SeoScroll5Steps from "../components/common/SeoScroll5Steps";
+// import SeoScroll5Steps from "../components/common/SeoScroll5Steps";
 import SeoScroll5Steps2 from "../components/common/SeoScroll5Steps2";
 import CenteredImage from "../components/common/CenteredImage";
 import CenterSector from "../components/common/CenterSector";
@@ -50,26 +50,34 @@ export default function web() {
   return (
     <>
       <Hero />
-      <Services />
-      <AboutPreview />
-            <ClientsMarquee />
-            <WhyChooseSplit />
+                  <ClientsMarquee />
+                   <CenteredImage  />
+
+ <WhyChooseSplit />
+       <AboutPreview /> 
+
+    <SeoScroll5Steps2 />
+
+      {/* {/* <Services /> */}
+      {/* <AboutPreview />  */}
+           
              
-             <CenteredImage  />
 
 
 
-            <CaseStudiesSection />
 
-    <CenterSector />
            {/* < ServiceScrollShowcase /> */}
 
-           <OtherServicesSlider />
-          <SeoScroll5Steps />
-      <Portfolio />
-      <ContactCTA />
+          {/* <SeoScroll5Steps /> */}
+      {/* <Portfolio /> */}
+      {/* <ContactCTA /> */}
+          <CenterSector />
+
+                  <CaseStudiesSection />
+
+                 <OtherServicesSlider />
+
             <LatestBlogsSection />
-   <SeoScroll5Steps2 />
             <FaqSection items={FAQS} />
 
     </>

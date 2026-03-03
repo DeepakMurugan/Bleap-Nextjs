@@ -77,16 +77,16 @@ export default function CaseStudiesSection() {
                 <div className="pt-5 text-center">
                   {/* Client row */}
                   <div className="flex items-center justify-center gap-2 text-[13px] text-neutral-600">
-                    <span className="font-bold">Client :</span>
+                    <span className="font-bold text-[18px]  text-[#000000] "  >Client :</span>
                     <span
-                      className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-white text-[11px] font-semibold ${cs.clientChipBg}`}
+                      className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-white text-[15px] font-semibold    ${cs.clientChipBg}`}
                     >
                       {cs.clientLabel}
                     </span>
                   </div>
 
                   {/* Metric row */}
-                  <div className="mt-3 flex items-center justify-center gap-2 text-[13px] text-neutral-600">
+                  <div className="mt-3 flex items-center justify-center gap-2 text-[16px] text-[#A6A6A6] font-semibold ">
                     <span className="text-[#ff6a00]">↗</span>
                     <span>{cs.metric}</span>
                   </div>

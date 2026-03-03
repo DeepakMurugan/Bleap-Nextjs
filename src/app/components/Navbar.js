@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link className="hover:text-[#FF6E00] transition-colors" href="/">Home</Link>
           <Link className="hover:text-[#FF6E00] transition-colors" href="/about">About Us</Link>
           <Link className="hover:text-[#FF6E00] transition-colors" href="/services">Services</Link>
-          <Link className="hover:text-[#FF6E00] transition-colors" href="/team">Team</Link>
+          <Link className="hover:text-[#FF6E00] transition-colors" href="/web">Web</Link>
           <Link className="hover:text-[#FF6E00] transition-colors" href="/careers">Careers</Link>
           <Link className="hover:text-[#FF6E00] transition-colors" href="https://bleap.in/blog" target="_blank">Blog</Link>
         </nav>
@@ -54,7 +54,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
             <Link href="/about">About Us</Link>
             <Link href="/services">Services</Link>
-            <Link href="/team">Team</Link>
+            <Link href="/web">web</Link>
             <Link href="/careers">Careers</Link>
             <Link href="/contact">Contact</Link>
           </div>

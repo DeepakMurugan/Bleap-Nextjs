@@ -70,7 +70,7 @@ export default function OtherServicesSlider() {
 
   return (
     <section className="bg-[#F5F5F7]">
-      <div className="mx-auto max-w-[1200px] px-6 lg:px-10 py-12">
+      <div className="mx-auto container px-6 lg:px-10 py-12">
         {/* Title */}
         <h2 className="text-center text-[20px] font-semibold text-neutral-900">
           Our Other <span className="text-[#ff6a00]">Services</span>
