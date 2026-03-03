@@ -6,17 +6,17 @@ import localFont from "next/font/local";
 const googleSans = localFont({
   src: [
     {
-      path: "./fonts/GoogleSans-Regular.ttf",
+      path: "/fonts/GoogleSans-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/GoogleSans-Medium.ttf",
+      path: "/fonts/GoogleSans-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./fonts/GoogleSans-Semibold.ttf",
+      path: "/fonts/GoogleSans-Semibold.ttf",
       weight: "600",
       style: "normal",
     },
