@@ -1,21 +1,26 @@
-import Hero from "./components/home/Hero";
-import Services from "./components/home/Services";
-import AboutPreview from "./components/home/AboutPreview";
+// import Hero from "./components/home/Hero";
+import HeroMore from "./components/common/HeroMore";
+import AboutBanner from "./components/common/AboutBanner";
+
+// import Services from "./components/home/Services";
+// import AboutPreview from "./components/home/AboutPreview";
 import Portfolio from "./components/home/Portfolio";
 import ContactCTA from "./components/home/ContactCTA";
 import ClientsMarquee from "./components/common/ClientsMarquee";
-import CaseStudiesSection from "./components/common/CaseStudiesSection";
 import FaqSection from "./components/common/FaqSection";
 import LatestBlogsSection from "./components/common/LatestBlogsSection";
 import WhyChooseSplit from "./components/common/WhyChooseSplit";
 // import webDevImg from "../assets/sections/webdev.png";
 
-import SeoScroll5Steps from "./components/common/SeoScroll5Steps";
+// import SeoScroll5Steps from "./components/common/SeoScroll5Steps";
 import SeoScroll5Steps2 from "./components/common/SeoScroll5Steps2";
 import CenteredImage from "./components/common/CenteredImage";
 import CenterSector from "./components/common/CenterSector";
 import OtherServicesSlider from "./components/common/OtherServicesSlider";
 
+import DarkServicesScroll5 from "./components/common/DarkServicesScroll5";
+
+import PortfolioGrid from "./components/common/PortfolioGrid";
 
 
 
@@ -49,27 +54,36 @@ export default function Home() {
 
   return (
     <>
-      <Hero />
-      <Services />
-      <AboutPreview />
+
+      {/* <Hero /> */}
+      {/* <HeroMore /> */}
+      <HeroMore />
+      <AboutBanner />
+
+
+      <DarkServicesScroll5 />
+
+      {/* <Services />
+      <AboutPreview /> */}
             <ClientsMarquee />
-            <WhyChooseSplit />
+     <PortfolioGrid />
+
+            {/* <WhyChooseSplit /> */}
              
-             <CenteredImage  />
+             {/* <CenteredImage  /> */}
 
 
+            {/* <CaseStudiesSection /> */}
 
-            <CaseStudiesSection />
-
-    <CenterSector />
+    {/* <CenterSector /> */}
            {/* < ServiceScrollShowcase /> */}
 
-           <OtherServicesSlider />
-          <SeoScroll5Steps />
-      <Portfolio />
-      <ContactCTA />
+           {/* <OtherServicesSlider /> */}
+          {/* <SeoScroll5Steps /> */}
+      {/* <Portfolio /> */}
+      {/* <ContactCTA /> */}
             <LatestBlogsSection />
-   <SeoScroll5Steps2 />
+   {/* <SeoScroll5Steps2 /> */}
             <FaqSection items={FAQS} />
 
     </>

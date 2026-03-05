@@ -32,7 +32,11 @@ const BLOGS = [
   },
 ];
 
-export default function LatestBlogsSection() {
+export default function 
+
+
+
+LatestBlogsSection() {
   return (
     <section className="bg-[#F5F5F7]">
       <div className="mx-auto container px-6 lg:px-10 py-12">

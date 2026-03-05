@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /* ✅ Replace these imports with your real images */
 import s1Top from "../../assets/blogs/st.png";
@@ -46,21 +46,33 @@ const STEPS = [
     leftTitle: "Content SEO & Topical Authority",
     desc:
       "We build content clusters that rank and convert — mapped to keywords, competitor gaps, and buyer intent. This improves visibility across the funnel, not just one page.",
-    bullets: ["Topic clusters & silos", "Content briefs & outlines", "Optimization + updates"],
+    bullets: [
+      "Topic clusters & silos",
+      "Content briefs & outlines",
+      "Optimization + updates",
+    ],
     images: { top: s3Top, bottom: s3Bot },
   },
   {
     leftTitle: "Local SEO (Google Business)",
     desc:
       "We improve your Maps visibility and local rankings through Google Business optimization, citations, review strategy, and location landing pages.",
-    bullets: ["GMB optimization", "Citations & NAP consistency", "Reviews strategy & local pages"],
+    bullets: [
+      "GMB optimization",
+      "Citations & NAP consistency",
+      "Reviews strategy & local pages",
+    ],
     images: { top: s4Top, bottom: s4Bot },
   },
   {
     leftTitle: "Authority Building & SEO Growth",
     desc:
       "We strengthen your domain authority with safe off-page work, link cleanup, and brand mention outreach—helping you rank competitively for high-value keywords.",
-    bullets: ["Backlink audit & cleanup", "Outreach & mentions", "Authority growth plan"],
+    bullets: [
+      "Backlink audit & cleanup",
+      "Outreach & mentions",
+      "Authority growth plan",
+    ],
     images: { top: s5Top, bottom: s5Bot },
   },
 ];
@@ -68,6 +80,10 @@ const STEPS = [
 export default function SeoScroll5Steps2() {
   const slideRefs = useRef([]);
   const scrollRootRef = useRef(null);
+  const sectionRef = useRef(null);
+
+  // ✅ full-section scroll lock (desktop only)
+  const [lockScroll, setLockScroll] = useState(false);
 
   // ✅ Reveal animation: add when visible, remove when not (works up & down)
   useEffect(() => {
@@ -92,12 +108,65 @@ export default function SeoScroll5Steps2() {
     return () => io.disconnect();
   }, []);
 
+  // ✅ Desktop: use mouse wheel to scroll THIS section fully (5 snaps), then release to page
+  useEffect(() => {
+    const sectionEl = sectionRef.current;
+    const scroller = scrollRootRef.current;
+    if (!sectionEl || !scroller) return;
+
+    const isDesktop = () => window.innerWidth >= 1024;
+
+    const inViewportEnough = () => {
+      const r = sectionEl.getBoundingClientRect();
+      const vh = window.innerHeight || 0;
+      const mid = r.top + r.height / 2;
+      return mid > 0.15 * vh && mid < 0.85 * vh;
+    };
+
+    const canScrollInside = (deltaY) => {
+      const atTop = scroller.scrollTop <= 0;
+      const atBottom =
+        scroller.scrollTop + scroller.clientHeight >= scroller.scrollHeight - 1;
+
+      if (deltaY < 0 && atTop) return false;
+      if (deltaY > 0 && atBottom) return false;
+      return true;
+    };
+
+    const onWheel = (e) => {
+      if (!isDesktop()) return;
+      if (!inViewportEnough()) return;
+
+      if (canScrollInside(e.deltaY)) {
+        e.preventDefault();
+        scroller.scrollBy({ top: e.deltaY, behavior: "smooth" });
+        setLockScroll(true);
+      } else {
+        setLockScroll(false);
+      }
+    };
+
+    window.addEventListener("wheel", onWheel, { passive: false });
+    return () => window.removeEventListener("wheel", onWheel);
+  }, []);
+
+  // ✅ When locked, prevent body scrolling (desktop)
+  useEffect(() => {
+    if (!lockScroll) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [lockScroll]);
+
   return (
-    <section className="bg-[#F5F5F7]">
+    <section ref={sectionRef} className="bg-[#F5F5F7]">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-5 py-10">
         {/* Title */}
         <h2 className="text-center text-[20px] md:text-[22px] font-semibold text-neutral-900">
-          Our <span className="text-[#ff6a00]">SEO Services</span> company in Chennai
+          Our <span className="text-[#ff6a00]">SEO Services</span> company in
+          Chennai
         </h2>
 
         {/* =======================
@@ -163,7 +232,7 @@ export default function SeoScroll5Steps2() {
         {/* =======================
             MOBILE/TABLET (SLIDER)
            ======================= */}
-        <div className="mt-8 lg:hidden">
+        <div className="mt-8 lg:hidden w-full overflow-hidden">
           <div className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory scroll-smooth scrollbar-hide">
             {STEPS.map((s, idx) => (
               <div
@@ -224,6 +293,17 @@ export default function SeoScroll5Steps2() {
         .slide.is-visible {
           opacity: 1;
           transform: translateY(0);
+        }
+      `}</style>
+
+      {/* ✅ Hide scrollbar */}
+      <style jsx global>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </section>

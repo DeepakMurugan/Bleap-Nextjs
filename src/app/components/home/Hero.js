@@ -30,7 +30,7 @@ export default function Hero() {
                 <h2 className="mt-3 text-[26px] md:text-[30px] font-semibold leading-snug text-neutral-900">
                   Our{" "}
                   <span className="text-[#ff6a00]">
-                    SEO Agency in Chennai
+                  webbb  SEO Agency in Chennai
                   </span>
                 </h2>
     
