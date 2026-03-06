@@ -1,7 +1,7 @@
 import Image from "next/image";
 import devImg from "../../assets/sections/webdevv.png";
 
-export default function Hero() {
+export default function hero() {
   return (
     <section className="bg-[#F5F5F7]">
       <div className="mx-auto container px-6 lg:px-10 py-16">

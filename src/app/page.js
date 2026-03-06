@@ -25,11 +25,11 @@ import PortfolioGrid from "./components/common/PortfolioGrid";
 import WhatSetsUsApart from "./components/common/WhatSetsUsApart";
 
 
-import centerIcon from "./assets/blogs/st.png";
-import iconTop from "./assets/blogs/st.png";
-import iconRight from "./assets/blogs/st.png";
-import iconBottom from "./assets/blogs/st.png";
-import iconLeft from "./assets/blogs/st.png";
+import centerIcon from "./assets/blogs/bl.png";
+import iconTop from "./assets/blogs/rrrr1.png";
+import iconRight from "./assets/blogs/lf.png";
+import iconBottom from "./assets/blogs/rrrr1.png";
+import iconLeft from "./assets/blogs/rrrr1.png";
 
 export default function Home() {
 

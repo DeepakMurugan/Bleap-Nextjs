@@ -96,7 +96,7 @@ export default function TestimonialsMosaic() {
           Client <span className="text-[#ff6a00]">Testimonials</span>
         </h2>
 		
-      <div className="mx-auto max-w-[1100px] px-6 lg:px-15 py-14">
+      <div className="mx-auto max-w-[1000px] px-6 lg:px-15 py-14">
         {/* ================= DESKTOP ================= */}
         <div className="hidden lg:flex items-center justify-center">
             
