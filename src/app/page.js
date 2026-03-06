@@ -22,7 +22,14 @@ import DarkServicesScroll5 from "./components/common/DarkServicesScroll5";
 
 import PortfolioGrid from "./components/common/PortfolioGrid";
 
+import WhatSetsUsApart from "./components/common/WhatSetsUsApart";
 
+
+import centerIcon from "./assets/blogs/st.png";
+import iconTop from "./assets/blogs/st.png";
+import iconRight from "./assets/blogs/st.png";
+import iconBottom from "./assets/blogs/st.png";
+import iconLeft from "./assets/blogs/st.png";
 
 export default function Home() {
 
@@ -67,6 +74,20 @@ export default function Home() {
       <AboutPreview /> */}
             <ClientsMarquee />
      <PortfolioGrid />
+  
+
+          <WhatSetsUsApart
+      title="What"
+      highlight="Sets Us Apart"
+      centerImage={centerIcon}
+      centerAlt="SEO"
+      items={[
+        { text: "10+ Years of SEO Experience", icon: iconTop },
+        { text: "20k+ Keywords Ranked", icon: iconRight },
+        { text: "100% transparent reporting & execution", icon: iconBottom },
+        { text: "In-depth audience & competitor research", icon: iconLeft },
+      ]}
+    />
 
             {/* <WhyChooseSplit /> */}
              

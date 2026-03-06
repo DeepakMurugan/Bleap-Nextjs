@@ -16,7 +16,13 @@ import CenteredImage from "../components/common/CenteredImage";
 import CenterSector from "../components/common/CenterSector";
 import OtherServicesSlider from "../components/common/OtherServicesSlider";
 
+import WhatSetsUsApart from "../components/common/WhatSetsUsApart";
 
+import centerIcon from "../assets/blogs/bl.png";
+import iconTop from "../assets/blogs/rrrr1.png";
+import iconRight from "../assets/blogs/lf.png";
+import iconBottom from "../assets/blogs/rrrr1.png";
+import iconLeft from "../assets/blogs/rrrr1.png";
 
 
 export default function web() {
@@ -54,6 +60,20 @@ export default function web() {
                    <CenteredImage  />
 
  <WhyChooseSplit />
+
+
+  <WhatSetsUsApart
+       title="What"
+       highlight="Sets Us Apart"
+       centerImage={centerIcon}
+       centerAlt="SEO"
+       items={[
+         { text: "10+ Years of SEO Experience", icon: iconTop },
+         { text: "20k+ Keywords Ranked", icon: iconRight },
+         { text: "100% transparent reporting & execution", icon: iconBottom },
+         { text: "In-depth audience & competitor research", icon: iconLeft },
+       ]}
+     />
        <AboutPreview /> 
 
     <SeoScroll5Steps2 />
