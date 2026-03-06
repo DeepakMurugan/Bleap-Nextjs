@@ -25,9 +25,9 @@ export default function WhatSetsUsApart({
 
   return (
     <section className="bg-[#F5F5F7]">
-      <div className="mx-auto max-w-[1200px] px-6 lg:px-20 py-12">
+      <div className="mx-auto max-w-[1000px] px-6 lg:px-15 py-12">
         {/* Title */}
-        <h2 className="text-center text-[20px] md:text-[22px] font-semibold text-neutral-900">
+        <h2 className="text-center text-[20px] md:text-[28px] font-semibold text-neutral-900">
           {title} <span className="text-[#ff6a00]">{highlight}</span>
         </h2>
 
@@ -160,7 +160,7 @@ export default function WhatSetsUsApart({
 function InfoCard({ text, className = "" }) {
   return (
     <div
-      className={`rounded-xl border border-[#e8e8e8] bg-white px-5 py-4 text-[13px] text-[#7a7a7a] shadow-sm ${className}`}
+      className={`rounded-xl border border-[#e8e8e8] bg-white px-5 py-4 text-[16px] text-[#666666] shadow-sm ${className}`}
     >
       {text}
     </div>

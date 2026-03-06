@@ -1,6 +1,6 @@
 import Hero from "../components/web/hero";
 // import Services from "../components/home/Services";
-import AboutPreview from "../components/home/AboutPreview";
+// import AboutPreview from "../components/home/AboutPreview";
 // import Portfolio from "../components/home/Portfolio";
 // import ContactCTA from "../components/home/ContactCTA";
 import ClientsMarquee from "../components/common/ClientsMarquee";
@@ -17,12 +17,18 @@ import CenterSector from "../components/common/CenterSector";
 import OtherServicesSlider from "../components/common/OtherServicesSlider";
 
 import WhatSetsUsApart from "../components/common/WhatSetsUsApart";
+import TestimonialsMosaic from "../components/common/TestimonialsMosaic";
+
+
+
 
 import centerIcon from "../assets/blogs/bl.png";
 import iconTop from "../assets/blogs/rrrr1.png";
 import iconRight from "../assets/blogs/lf.png";
 import iconBottom from "../assets/blogs/rrrr1.png";
 import iconLeft from "../assets/blogs/rrrr1.png";
+
+
 
 
 export default function web() {
@@ -74,7 +80,7 @@ export default function web() {
          { text: "In-depth audience & competitor research", icon: iconLeft },
        ]}
      />
-       <AboutPreview /> 
+       {/* <AboutPreview />  */}
 
     <SeoScroll5Steps2 />
 
@@ -96,6 +102,8 @@ export default function web() {
                   <CaseStudiesSection />
 
                  <OtherServicesSlider />
+
+                 <TestimonialsMosaic />
 
             <LatestBlogsSection />
             <FaqSection items={FAQS} />
