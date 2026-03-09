@@ -78,6 +78,17 @@ const STEPS = [
     ],
     images: { top: s6Top, bottom: s6Bot },
   },
+    {
+    leftTitle: "Remarketing Ads ",
+    desc:
+      "Not every visitor converts on their first visit. Our remarketing strategies help you re-engage users who have already shown interest in your brand, keeping you top of mind and increasing the likelihood of conversion with personalized messaging.",
+    bullets: [
+      "Backlink audit & cleanup",
+      "Outreach & mentions",
+      "Authority growth plan",
+    ],
+    images: { top: s5Top, bottom: s5Bot },
+  },
 ];
 
 export default function Emailscroll() {
