@@ -24,7 +24,7 @@ import s6Bot from "../../assets/blogs/ppct1.png";
 
 const STEPS = [
   {
-    leftTitle: "Search Ads ",
+    leftTitle: "Email Campaign Strategy ",
     desc:
       "Our search advertising campaigns place your business in front of users actively searching for your products or services. By targeting high-intent keywords and optimizing ad copy, we help you attract prospects who are ready to take action, resulting in better conversions and reduced wasted spend.",
     bullets: [
@@ -80,7 +80,7 @@ const STEPS = [
   },
 ];
 
-export default function PpcScroll() {
+export default function Emailscroll() {
   const slideRefs = useRef([]);
   const scrollRootRef = useRef(null);
   const sectionRef = useRef(null);
@@ -168,7 +168,7 @@ export default function PpcScroll() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-5 py-10">
         {/* Title */}
         <h2 className="text-center text-[20px] md:text-[22px] font-semibold text-neutral-900">
-          Our <span className="text-[#ff6a00]">PPC Services</span> company in
+          Our <span className="text-[#ff6a00]">Email Marketing  Services</span> company in
           Chennai
         </h2>
 
