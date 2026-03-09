@@ -1,4 +1,4 @@
-import Hero from "../components/web/hero";
+import Hero from "../components/ppc/hero";
 // import Services from "../components/home/Services";
 // import AboutPreview from "../components/home/AboutPreview";
 // import Portfolio from "../components/home/Portfolio";
@@ -7,11 +7,11 @@ import ClientsMarquee from "../components/common/ClientsMarquee";
 import CaseStudiesSection from "../components/common/CaseStudiesSection";
 import FaqSection from "../components/common/FaqSection";
 import LatestBlogsSection from "../components/common/LatestBlogsSection";
-import WhyChooseSplit from "../components/web/whychoose";
+import WhyChooseSplit from "../components/ppc/whychoose";
 // import webDevImg from "../assets/sections/webdev.png";
 
 // import SeoScroll5Steps from "../components/common/SeoScroll5Steps";
-import SeoScroll5Steps2 from "../components/common/SeoScroll5Steps2";
+import PpcScroll from "../components/common/PpcScroll";
 import CenteredImage from "../components/common/CenteredImage";
 import CenterSector from "../components/common/CenterSector";
 import OtherServicesSlider from "../components/common/OtherServicesSlider";
@@ -36,24 +36,24 @@ export default function page() {
 
   const FAQS = [
   {
-    q: "How will SEO directly impact my revenue or lead generation?",
-    a: "SEO enhances visibility for high-intent searches, increasing qualified traffic and conversions without raising ad spend.",
+    q: "Is it expensive to promote my business using PPC? ",
+    a: " No, PPC is not necessarily expensive; it can only cost a lot when the campaigns are mismanaged. You can monitor your spending and only pay per result, as closely as possible, and with optimization.",
   },
   {
-    q: "Do I need SEO if my website is already live?",
-    a: "Yes. A live website still needs optimization to rank better, load faster, and attract the right audience over time.",
+    q: "Will I get reports on campaign performance?",
+    a: "Yes. You receive clear, easy-to-understand reports that show spend, clicks, leads, conversions, and ROI. We believe in complete transparency, so you always know what’s working and where improvements are being made.",
   },
   {
-    q: "What are the SEO services you offer?",
-    a: "We provide on-page, off-page, technical SEO, Local SEO, content optimization, and e-commerce SEO.",
+    q: "Why do I need to go for PPC Services?",
+    a: "PPC provides immediate presence and quantifiable results in contrast to months before getting results. With the management, you are going to get qualified leads to your budget and not the random clicks.",
   },
   {
-    q: "Can SEO reduce my dependency on paid ads?",
-    a: "Yes. Strong SEO builds consistent organic traffic and reduces cost-per-acquisition over time.",
+    q: "Can PPC work alongside SEO and other marketing efforts?",
+    a: "Absolutely. PPC complements SEO by delivering immediate visibility while organic strategies build long-term growth. Together, they create a balanced and effective digital marketing ecosystem.",
   },
   {
-    q: "What KPIs should my business track to measure SEO success?",
-    a: "Track organic traffic, rankings, CTR, leads/sales from organic, and key page performance metrics.",
+    q: "Can you do paid advertising for a small business?",
+    a: "Yes, small businesses are the greatest benefactors since PPC allows one to begin small with a low budget and then only increase when the results appear. Smart targeting also makes sure that every rupee is used on high-intent prospects.",
   },
 ];
 
@@ -74,15 +74,15 @@ export default function page() {
        centerImage={centerIcon}
        centerAlt="SEO"
        items={[
-         { text: "10+ Years of SEO Experience", icon: iconTop },
-         { text: "20k+ Keywords Ranked", icon: iconRight },
-         { text: "100% transparent reporting & execution", icon: iconBottom },
-         { text: "In-depth audience & competitor research", icon: iconLeft },
+         { text: "Worked with 100+ brands across multiple industries.    ", icon: iconTop },
+         { text: "Proven experience managing small to high-scale ad budgets", icon: iconRight },
+         { text: "Achieved up to 60% reduction in wasted ad spend through continuous optimization", icon: iconBottom },
+         { text: "In- audience & competitor research", icon: iconLeft },
        ]}
      />
        {/* <AboutPreview />  */}
 
-    <SeoScroll5Steps2 />
+    <PpcScroll />
 
       {/* {/* <Services /> */}
       {/* <AboutPreview />  */}
