@@ -1,4 +1,4 @@
-import Hero from "../components/web/hero";
+import Hero from "../components/graphic/hero";
 // import Services from "../components/home/Services";
 // import AboutPreview from "../components/home/AboutPreview";
 // import Portfolio from "../components/home/Portfolio";
@@ -7,11 +7,11 @@ import ClientsMarquee from "../components/common/ClientsMarquee";
 import CaseStudiesSection from "../components/common/CaseStudiesSection";
 import FaqSection from "../components/common/FaqSection";
 import LatestBlogsSection from "../components/common/LatestBlogsSection";
-import WhyChooseSplit from "../components/web/whychoose";
+import WhyChooseSplit from "../components/graphic/whychoose";
 // import webDevImg from "../assets/sections/webdev.png";
 
 // import SeoScroll5Steps from "../components/common/SeoScroll5Steps";
-import SeoScroll5Steps2 from "../components/common/SeoScroll5Steps2";
+import SeoScroll5Steps2 from "../components/common/Graphscroll";
 import CenteredImage from "../components/common/CenteredImage";
 import CenterSector from "../components/common/CenterSector";
 import OtherServicesSlider from "../components/common/OtherServicesSlider";
@@ -36,24 +36,24 @@ export default function page() {
 
   const FAQS = [
   {
-    q: "Why is a professionally developed website important for my business?",
-    a: "A professional website improves credibility, user experience, and conversion rates while ensuring your brand stands out in a competitive digital space",
+    q: "  Why is graphic design important for my business?",
+    a: " Graphic design helps build brand recognition, improves communication, and creates trust. Professionally designed visuals make your business look credible and help attract and retain customers.",
   },
   {
-    q: "Will my website be mobile-friendly?",
-    a: "Yes. Every website we develop is fully responsive and optimized for all screen sizes and devices.",
+    q: "Can you design creatives for both digital and print?",
+    a: " Yes. We offer complete graphic design solutions for both digital platforms and print media, ensuring consistent branding across all channels.",
   },
   {
-    q: " Can you redesign my existing website?",
-    a: "Absolutely. We specialize in website redesigns that enhance design, performance, and conversion potential without losing existing brand value.",
+    q: "Will the designs match my brand identity?",
+    a: " Absolutely. We take time to understand your brand guidelines, target audience, and business objectives before creating any design.",
   },
   {
-    q: "Will the website be SEO-friendly?",
-    a: " Yes. Our development process follows SEO best practices, ensuring faster load times, clean structure, and search engine visibility.",
+    q: "How long does it take to complete a graphic design project?",
+    a: "Project timelines depend on the scope and complexity of the design. Simple creatives can be delivered quickly, while branding or multi-asset projects may take longer. We always provide clear timelines before starting.",
   },
   {
-    q: "Do you offer website maintenance after launch?",
-    a: " Yes. We provide ongoing maintenance and support to keep your website secure, updated, and performing at its best.",
+    q: "Can small businesses benefit from graphic design services?",
+    a: "Yes. Strong visual branding helps small businesses compete effectively, build trust, and stand out even with limited marketing budgets.",
   },
 ];
 
@@ -74,10 +74,10 @@ export default function page() {
        centerImage={centerIcon}
        centerAlt="SEO"
        items={[
-         { text: "Delivered 200+ websites across multiple industries", icon: iconTop },
-         { text: "Expertise in custom, CMS, and eCommerce development", icon: iconRight },
-         { text: "Websites optimized for speed, SEO, and conversions.", icon: iconBottom },
-         { text: "Skilled developers with a strong UX and performance focus", icon: iconLeft },
+         { text: "Worked with 100+ brands across diverse industries", icon: iconTop },
+         { text: "Strong focus on consistency, usability, and visual storytelling", icon: iconRight },
+         { text: "Design solutions aligned with branding and marketing goals", icon: iconBottom },
+         { text: "Experienced designers with a deep understanding", icon: iconLeft },
        ]}
      />
        {/* <AboutPreview />  */}

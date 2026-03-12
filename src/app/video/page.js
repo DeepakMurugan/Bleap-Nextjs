@@ -1,4 +1,4 @@
-import Hero from "../components/web/hero";
+import Hero from "../components/video/hero";
 // import Services from "../components/home/Services";
 // import AboutPreview from "../components/home/AboutPreview";
 // import Portfolio from "../components/home/Portfolio";
@@ -7,11 +7,11 @@ import ClientsMarquee from "../components/common/ClientsMarquee";
 import CaseStudiesSection from "../components/common/CaseStudiesSection";
 import FaqSection from "../components/common/FaqSection";
 import LatestBlogsSection from "../components/common/LatestBlogsSection";
-import WhyChooseSplit from "../components/web/whychoose";
+import WhyChooseSplit from "../components/video/whychoose";
 // import webDevImg from "../assets/sections/webdev.png";
 
 // import SeoScroll5Steps from "../components/common/SeoScroll5Steps";
-import SeoScroll5Steps2 from "../components/common/SeoScroll5Steps2";
+import SeoScroll5Steps2 from "../components/common/Videoscroll";
 import CenteredImage from "../components/common/CenteredImage";
 import CenterSector from "../components/common/CenterSector";
 import OtherServicesSlider from "../components/common/OtherServicesSlider";
@@ -36,25 +36,22 @@ export default function page() {
 
   const FAQS = [
   {
-    q: "Why is a professionally developed website important for my business?",
-    a: "A professional website improves credibility, user experience, and conversion rates while ensuring your brand stands out in a competitive digital space",
+    q: " What types of videos do you edit?",
+    a: " We edit promotional videos, social media content, corporate videos, YouTube videos, ads, reels, and short-form content based on your requirements.",
   },
   {
-    q: "Will my website be mobile-friendly?",
-    a: "Yes. Every website we develop is fully responsive and optimized for all screen sizes and devices.",
+    q: "Can you edit videos for different platforms?",
+    a: "Yes. We tailor video formats, durations, and styles based on platform requirements and audience behaviour. ",
   },
   {
-    q: " Can you redesign my existing website?",
-    a: "Absolutely. We specialize in website redesigns that enhance design, performance, and conversion potential without losing existing brand value.",
+    q: " Will the editing match my brand style?",
+    a: "Absolutely. We follow your brand guidelines, tone, and visual preferences to ensure consistency across all video content.",
   },
   {
-    q: "Will the website be SEO-friendly?",
-    a: " Yes. Our development process follows SEO best practices, ensuring faster load times, clean structure, and search engine visibility.",
+    q: "How long does it take to deliver an edited video?",
+    a: "Timelines depend on video length and complexity. We provide clear delivery schedules before starting and stick to agreed timelines",
   },
-  {
-    q: "Do you offer website maintenance after launch?",
-    a: " Yes. We provide ongoing maintenance and support to keep your website secure, updated, and performing at its best.",
-  },
+ 
 ];
 
 
@@ -74,10 +71,14 @@ export default function page() {
        centerImage={centerIcon}
        centerAlt="SEO"
        items={[
-         { text: "Delivered 200+ websites across multiple industries", icon: iconTop },
-         { text: "Expertise in custom, CMS, and eCommerce development", icon: iconRight },
-         { text: "Websites optimized for speed, SEO, and conversions.", icon: iconBottom },
-         { text: "Skilled developers with a strong UX and performance focus", icon: iconLeft },
+       { text: "Experience editing videos for brands across diverse industries", icon: iconTop },
+      
+       { text: "Editing styles tailored to brand tone, platform, and audience", icon: iconRight },
+      
+       { text: "Strong focus on story flow, pacing, and visual consistency", icon: iconBottom },
+      
+
+       { text: "Skilled editors with a deep understanding of digital and social video formats", icon: iconLeft },
        ]}
      />
        {/* <AboutPreview />  */}

@@ -11,7 +11,7 @@ import WhyChooseSplit from "../components/webdesign/whychoose";
 // import webDevImg from "../assets/sections/webdev.png";
 
 // import SeoScroll5Steps from "../components/common/SeoScroll5Steps";
-import SeoScroll5Steps2 from "../components/common/SeoScroll5Steps2";
+import SeoScroll5Steps2 from "../components/common/Webdes";
 import CenteredImage from "../components/common/CenteredImage";
 import CenterSector from "../components/common/CenterSector";
 import OtherServicesSlider from "../components/common/OtherServicesSlider";

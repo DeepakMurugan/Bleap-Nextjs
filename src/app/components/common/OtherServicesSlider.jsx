@@ -4,12 +4,15 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
 // ✅ Replace with your real images
-import s1 from "../../assets/case-studies/healthcare.png";
-import s2 from "../../assets/case-studies/healthcare.png";
-import s3 from "../../assets/case-studies/healthcare.png";
-import s4 from "../../assets/case-studies/healthcare.png";
-import s5 from "../../assets/case-studies/healthcare.png";
-import s6 from "../../assets/case-studies/healthcare.png";
+import s1 from "../../assets/case-studies/df.png";
+import s2 from "../../assets/case-studies/df2.png";
+import s3 from "../../assets/case-studies/df.png";
+import s4 from "../../assets/case-studies/df.png";
+import s5 from "../../assets/case-studies/df2.png";
+import s6 from "../../assets/case-studies/df.png";
+import s7 from "../../assets/case-studies/df.png";
+import s8 from "../../assets/case-studies/df2.png";
+import s9 from "../../assets/case-studies/df.png";
 
 const SERVICES = [
   { id: "seo", title: "Search Engine Optimization", linkText: "Know More", img: s1, href: "/services/seo" },
@@ -20,9 +23,9 @@ const SERVICES = [
   { id: "design", title: "Graphic Designing", linkText: "Know More", img: s6, href: "/services/graphic-design" },
 
   // extra sample duplicates if you want more cards
-  { id: "smm-2", title: "Social Media Marketing", linkText: "Know More", img: s4, href: "/services/social-media" },
-  { id: "webdev-2", title: "Website Development", linkText: "Know More", img: s5, href: "/services/web-development" },
-  { id: "design-2", title: "Graphic Designings", linkText: "Know More", img: s6, href: "/services/graphic-design" },
+  { id: "smm-2", title: "Social Media Marketing", linkText: "Know More", img: s7, href: "/services/social-media" },
+  { id: "webdev-2", title: "Website Development", linkText: "Know More", img: s8, href: "/services/web-development" },
+  { id: "design-2", title: "Graphic Designings", linkText: "Know More", img: s9, href: "/services/graphic-design" },
 ];
 
 export default function OtherServicesSlider() {
@@ -72,7 +75,7 @@ export default function OtherServicesSlider() {
     <section className="bg-[#F5F5F7]">
       <div className="mx-auto container px-6 lg:px-10 py-12">
         {/* Title */}
-        <h2 className="text-center text-[20px] font-semibold text-neutral-900">
+        <h2 className="text-center text-[30px] font-semibold text-neutral-900">
           Our Other <span className="text-[#ff6a00]">Services</span>
         </h2>
 
@@ -91,23 +94,23 @@ export default function OtherServicesSlider() {
                 className="px-3"
                 style={{ width: `${100 / SERVICES.length}%` }}
               >
-                <div className="rounded-2xl bg-white border border-neutral-200 shadow-sm overflow-hidden">
+                <div className="rounded-2xl overflow-hidden">
                   <div className="p-4">
-                    <div className="overflow-hidden rounded-xl">
+                    <div className="overflow-hidden">
                       <Image
                         src={s.img}
                         alt={s.title}
-                        className="h-[180px] w-full object-cover"
+                        className="h-full w-full object-contain"
                       />
                     </div>
 
-                    <p className="mt-4 text-[13px] font-medium text-neutral-900">
+                    <p className="mt-4 text-[18px] font-medium text-[#000000]">
                       {s.title}
                     </p>
 
                     <a
                       href={s.href}
-                      className="mt-2 inline-flex items-center gap-2 text-[12px] text-neutral-500 hover:text-neutral-900"
+                      className="mt-2 inline-flex items-center gap-2 text-[15px] text-[#000000] hover:text-neutral-900"
                     >
                       {s.linkText} <span>↗</span>
                     </a>
