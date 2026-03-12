@@ -7,14 +7,16 @@ import { ChevronDown, ArrowRight, Menu, X, ChevronRight } from "lucide-react";
 import logo from "../assets/bleap-logo.png";
 
 const servicesMenu = [
-  { label: "Web", href: "/web" },
+    { label: "PPC", href: "/ppc" },
+  { label: "SEO", href: "/seo" },
+
   { label: "Social", href: "/social" },
   { label: "Graphic", href: "/graphic" },
-  { label: "Web Design", href: "/web-design" },
-  { label: "SEO", href: "/seo" },
+  { label: "Web Design", href: "/webdesign" },
    { label: "Email Marketing", href: "/emailmarketint" },
   { label: "Video Marketing", href: "/video" },
-  { label: "PPC", href: "/ppc" },
+    { label: "Web Development", href: "/web" },
+
  
 ];
 
