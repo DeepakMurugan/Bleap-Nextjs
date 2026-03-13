@@ -68,9 +68,7 @@ export default function CaseStudiesSection() {
                   </div>
 
                   {/* Purple pill */}
-                  <span className="absolute right-3 top-3 bg-[#7C3AED] text-white text-[11px] font-semibold px-3 py-1">
-                    {cs.tag}
-                  </span>
+              
                 </div>
 
                 {/* ✅ Center aligned body */}
