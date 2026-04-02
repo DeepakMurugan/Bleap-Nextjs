@@ -94,7 +94,7 @@ LatestBlogsSection() {
         {/* Bottom View more button */}
         <div className="mt-8 flex justify-center">
           <Link
-            href="https://bleap.in/blog/"
+            href="https://blog.bleap.in"
             target="_blank"
             className="inline-flex items-center justify-center rounded-full border border-neutral-300 bg-white px-6 py-2 text-[16px] font-medium text-neutral-700 hover:bg-[#ff6a00] hover:text-white transition-colors"
           >

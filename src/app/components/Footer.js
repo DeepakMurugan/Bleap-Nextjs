@@ -182,7 +182,7 @@ export default function Footer() {
               <li><Link className="hover:text-[#FF6E00]" href="/about-us">About Us</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/team">Our Team</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/careers">Careers</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="https://blog.yourdomain.com" target="_blank">Blog</Link></li>
+              <li><Link className="hover:text-[#FF6E00]" href="https://blog.bleap.in" target="_blank">Blog</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -231,7 +231,7 @@ export default function Footer() {
                   <Phone size={17} strokeWidth={2} />
                 </span>
                 <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="tel:+918762916841">
-                  +91 8762916841
+                 +91 9382809420
                 </a>
               </p>
             </div>

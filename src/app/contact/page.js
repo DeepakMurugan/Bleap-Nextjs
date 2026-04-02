@@ -46,7 +46,7 @@ export default function Contact() {
         "Maharashtra, India,",
       ],
       email: "info@bleapdigital.com",
-      phone: "+91 9382809420,",
+      phone: "+91 9382809420",
     },
     {
       city: "Pune",
@@ -57,7 +57,7 @@ export default function Contact() {
         "Maharashtra, India",
       ],
       email: "info@bleapdigital.com",
-      phone: "+91 93828 09420,",
+      phone: "+91 93828 09420",
     },
     {
       city: "Noida",
