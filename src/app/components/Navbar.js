@@ -103,7 +103,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="https://blog.bleap.in"
+            href="https://bleap.in/blog"
             target="_blank"
             className="transition-colors duration-300 hover:text-[#FF6A00]"
           >
@@ -211,7 +211,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="https://blog.bleap.in/"
+              href="https://bleap.in/blog"
               target="_blank"
               className="border-b border-[#EFEFEF] py-4"
               onClick={() => setMenuOpen(false)}

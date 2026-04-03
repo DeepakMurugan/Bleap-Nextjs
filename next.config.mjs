@@ -3,17 +3,6 @@ const nextConfig = {
   async redirects() {
     return [
 
-       {
-        source: '/blog',
-        destination: 'https://blog.bleap.in',
-        permanent: true,
-      },
-      {
-        source: '/blog/:path*',
-        destination: 'https://blog.bleap.in/:path*',
-        permanent: true,
-      },
-
       
     
       {

@@ -182,7 +182,7 @@ export default function Footer() {
               <li><Link className="hover:text-[#FF6E00]" href="/about-us">About Us</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/team">Our Team</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/careers">Careers</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="https://blog.bleap.in" target="_blank">Blog</Link></li>
+              <li><Link className="hover:text-[#FF6E00]" href="https://bleap.in/blog" target="_blank">Blog</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/contact">Contact Us</Link></li>
             </ul>
           </div>
