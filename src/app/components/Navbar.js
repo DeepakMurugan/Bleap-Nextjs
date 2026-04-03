@@ -211,7 +211,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="https://bleap.in/blog"
+              href="https://blog.bleap.in/"
               target="_blank"
               className="border-b border-[#EFEFEF] py-4"
               onClick={() => setMenuOpen(false)}
