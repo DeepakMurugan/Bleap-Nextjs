@@ -12,6 +12,23 @@ import iconInstagram from "../assets/footer/fi.png";
 import iconLinkedin from "../assets/footer/flin.png";
 import iconYoutube from "../assets/footer/fu.png";
 
+
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Contact Bleap – Digital Marketing Agency in Chennai | SEO, PPC & Social Media",
+  description:
+    "Get in touch with Bleap, a trusted digital marketing agency in Chennai. Contact us for SEO, PPC, social media marketing, website design & creative solutions to grow your business online.",
+  alternates: {
+    canonical: "https://www.bleap.in/contact",
+  },
+};
+
+
+
+
+
+
+
 export default function Contact() {
   const offices = [
     {

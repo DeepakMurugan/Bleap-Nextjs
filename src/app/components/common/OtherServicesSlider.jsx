@@ -13,14 +13,14 @@ import s7 from "../../assets/case-studies/h7.png";
 import s8 from "../../assets/case-studies/h8.png";
 
 const SERVICES = [
-  { id: 1, title: "Search Engine Optimization", linkText: "Know More", img: s1, href: "/seo-service-in-chennai" },
-  { id: 2, title: "Pay Per Click", linkText: "Know More", img: s2, href: "/ppc-service-in-chennai" },
-  { id: 3, title: "Email Marketing", linkText: "Know More", img: s3, href: "/email-marketing-service-in-chennai" },
-  { id: 4, title: "Website Development", linkText: "Know More", img: s4, href: "/website-development-service-in-chennai" },
-  { id: 5, title: " Website Design ", linkText: "Know More", img: s5, href: "/website-design-service-in-chennai" },
-  { id: 6, title: "Graphic Designing", linkText: "Know More", img: s6, href: "/graphic-design-service-in-chennai" },
-  { id: 7, title: "Social Media Marketing", linkText: "Know More", img: s7, href: "/social-media-marketing-service-in-chennai" },
-  { id: 8, title: "Video Editing ", linkText: "Know More", img: s8, href: "/video-editing-service-in-chennai" },
+  { id: 1, title: "Search Engine Optimization", linkText: "Know More", img: s1, href: "/services/seo-service-in-chennai" },
+  { id: 2, title: "Pay Per Click", linkText: "Know More", img: s2, href: "/services/ppc-service-in-chennai" },
+  { id: 3, title: "Email Marketing", linkText: "Know More", img: s3, href: "/services/email-marketing-in-chennai" },
+  { id: 4, title: "Website Development", linkText: "Know More", img: s4, href: "/services/website-development-service-in-chennai" },
+  { id: 5, title: " Website Design ", linkText: "Know More", img: s5, href: "/services/website-design-service-in-chennai" },
+  { id: 6, title: "Graphic Designing", linkText: "Know More", img: s6, href: "/services/graphic-design-service-in-chennai" },
+  { id: 7, title: "Social Media Marketing", linkText: "Know More", img: s7, href: "/services/social-media-marketing-in-chennai" },
+  { id: 8, title: "Video Editing ", linkText: "Know More", img: s8, href: "/services/video-editing-service-in-chennai" },
 ];
 
 export default function OtherServicesSlider() {

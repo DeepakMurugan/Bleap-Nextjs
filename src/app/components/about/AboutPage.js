@@ -6,6 +6,24 @@ import smallCenterImg from "../../assets/case-studies/b22.png";
 import aboutImg from "../../assets/case-studies/digi.png"; // change path
 import WhyChooseBleapSection from "../common/WhyChooseBleapSection ";
 
+
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "About BLeap | Digital Marketing Agency in Chennai",
+  description:
+    "Learn about BLeap, a Chennai-based digital marketing agency delivering SEO, PPC, social media marketing, and creative solutions to drive real business growth and measurable results.",
+  alternates: {
+    canonical: "https://www.bleap.in/about-us",
+  },
+};
+
+
+
+
+
+
+
+
 export default function AboutPage() {
   return (
     <div className="bg-white">

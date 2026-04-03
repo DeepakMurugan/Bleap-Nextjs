@@ -24,6 +24,18 @@ import iconLeft from "../../assets/blogs/bleft.png";
 
 
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Best PPC Agency in Chennai | Google & Meta Ads Experts – Bleap",
+  description:
+    "Top PPC agency in Chennai – Bleap manages Google Search, Meta, Display & YouTube Ads. We reduce wasted spend and deliver real, measurable ROI results.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/ppc-service-in-chennai",
+  },
+};
+
+
+
 export default function page() {
 
 

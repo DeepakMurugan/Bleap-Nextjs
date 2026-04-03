@@ -28,6 +28,15 @@ import iconRight from "../../assets/blogs/br.png";
 import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Social Media Marketing in Chennai | SMM Agency for Leads & Growth - BLeap",
+  description:
+  "Looking for the best social media marketing agency in Chennai? BLeap delivers high-performing SMM strategies, paid ads, and content to grow your business.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/social-media-marketing-in-chennai",
+  },
+};
 
 
 export default function page() {

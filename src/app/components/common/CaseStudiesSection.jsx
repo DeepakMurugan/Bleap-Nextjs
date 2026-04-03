@@ -16,7 +16,7 @@ const CASE_STUDIES = [
     clientLabel: "Healthcare",
     clientChipBg: "bg-[#22C55E]",
     metric: "Clicks increased by 55%",
-    href: "/case-studies/healthcare",
+    href: "/contact",
   },
   {
     title: "Education",
@@ -25,7 +25,7 @@ const CASE_STUDIES = [
     clientLabel: "Education",
     clientChipBg: "bg-[#3B82F6]",
     metric: "Clicks increased by 53%",
-    href: "/case-studies/education",
+    href: "/contact",
   },
   {
     title: "Real Estate",
@@ -34,7 +34,7 @@ const CASE_STUDIES = [
     clientLabel: "Real Estate",
     clientChipBg: "bg-[#F97316]",
     metric: "Clicks increased by 52%",
-    href: "/case-studies/real-estate",
+    href: "/contact",
   },
 ];
 

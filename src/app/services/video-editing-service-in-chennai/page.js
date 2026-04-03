@@ -28,6 +28,15 @@ import iconRight from "../../assets/blogs/br.png";
 import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Video Editing Services in Chennai | High-Quality Video Production & Editing - BLeap",
+  description:
+    "Create high-quality videos with BLeap’s video editing services in Chennai. We deliver reels, ads, and YouTube content designed for engagement and conversions.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/video-editing-service-in-chennai",
+  },
+};
 
 
 export default function page() {

@@ -26,6 +26,19 @@ import iconRight from "../../assets/blogs/br.png";
 import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
+
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Website Development Services in Chennai | Custom Web Solutions - BLeap",
+  description:
+    "Build powerful, scalable websites with BLeap’s website development services in Chennai. We offer custom development, responsive design, and ecommerce solutions for business success.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/website-development-service-in-chennai",
+  },
+};
+
+
+
 export default function Page() {
   const FAQS = [
     {

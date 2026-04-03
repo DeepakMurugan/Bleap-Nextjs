@@ -27,6 +27,15 @@ import iconRight from "../../assets/blogs/br.png";
 import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Website Design Services in Chennai | Web Design & Development Agency - BLeap",
+  description:
+    "Build a high-converting website with BLeap’s website design services in Chennai. We create responsive, SEO-friendly, and user-focused websites that drive traffic, leads, and business growth.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/website-design-service-in-chennai",
+  },
+};
 
 
 export default function page() {

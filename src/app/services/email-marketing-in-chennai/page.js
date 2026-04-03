@@ -29,7 +29,15 @@ import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
 
-
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Best Email Marketing Agency in Chennai for Campaigns & Lead Generation",
+  description:
+    "Looking for the best email marketing agency in Chennai? BLeap delivers targeted email campaigns, automation, and lead nurturing strategies for business growth.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/email-marketing-in-chennai",
+  },
+};
 
 export default function page() {
 

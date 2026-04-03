@@ -29,6 +29,15 @@ import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Graphic Design Services in Chennai | Creative Branding & Design Agency - BLeap",
+  description:
+    "Enhance your brand with BLeap’s graphic design services in Chennai. We create logos, social media creatives, brochures & branding designs that drive engagement and conversions.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/graphic-design-service-in-chennai",
+  },
+};
 
 
 export default function page() {

@@ -24,6 +24,15 @@ import iconBottom from "../../assets/blogs/bb.png";
 import iconLeft from "../../assets/blogs/bleft.png";
 
 
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "SEO Services in Chennai | #1 SEO Agency for Traffic & Leads - BLeap",
+  description:
+  "Boost rankings and leads with BLeap’s SEO services in Chennai. Our experts deliver technical SEO, local SEO, and content strategies to grow your business online.",
+  alternates: {
+    canonical: "https://www.bleap.in/services/seo-service-in-chennai",
+  },
+};
 
 
 export default function page() {

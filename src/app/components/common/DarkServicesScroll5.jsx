@@ -40,7 +40,7 @@ const SLIDES = [
     leftTitle: "Search Engine Optimisation (SEO)",
     desc:
       "Search has evolved, and so have we. With AEO, semantic search, and voice optimisation leading the way, as a result-driven digital marketing agency, we design SEO strategies that go past visibility to deliver real ROI. Our goal isn’t just to rank your site; it’s to drive qualified leads, better conversions, and sustainable sales growth",
-    href: "seo",
+    href: "/services/seo-service-in-chennai",
     images: { top: s1Top, bottom: s1Bot },
   },
   {
@@ -48,7 +48,7 @@ const SLIDES = [
     
     leftTitle: "Pay Per Click (PPC)",
     desc:"Clicks don’t pay the bills; sales do. At Leapsters, our PPC strategies are built for conversions, not vanity metrics. By using AI-powered targeting, precision bidding, and data-driven optimisation, we ensure every rupee you spend delivers maximum ROI",
-    href: "/ppc",
+    href: "/services/ppc-service-in-chennai",
     images: { top: s2Top, bottom: s2Bot },
   },
   
@@ -58,7 +58,7 @@ const SLIDES = [
     titleTail: "",
     leftTitle: "Website Development",
     desc:  "A website should do more than look good; it should perform. Our development team creates sites that are fast, secure, mobile-first, and SEO-ready. Every line of code and every design choice is made to improve user experience, conversions, and business growth.",
-    href: "/web",
+    href: "/services/website-development-service-in-chennai",
     images: { top: s3Top, bottom: s3Bot },
   },
   {
@@ -68,7 +68,7 @@ const SLIDES = [
     leftTitle: "Graphic Designing",
     desc:
     "Your audience makes split-second decisions. The right design can make them stop, look, and remember. At Bleap, a creative digital marketing company, we create designs that speak your brand’s language: bold, clear, and unforgettable. Whether it’s social media creatives, brand identity, or campaign graphics, we design to spark attention and build trust.",
-    href: "/graphic",
+    href: "/services/graphic-design-service-in-chennai",
     images: { top: s4Top, bottom: s4Bot },
   },
     {
@@ -78,7 +78,7 @@ const SLIDES = [
     leftTitle: "Video Editing",
     desc:
     "Great videos don’t just look good; they sell. We edit videos that spark emotion, build trust, and leave an impact. Our video editing team at Leapsters creates content that hooks fast, communicates clearly, and drives results. Whether it’s ads, promos, or social clips, we create videos that turn viewers into ",
-    href: "/video",
+    href: "/services/video-editing-service-in-chennai",
     images: { top: s5Top, bottom: s5Bot },
   },
     {
@@ -88,7 +88,7 @@ const SLIDES = [
     leftTitle: "Website Design (UX/UI)",
     desc:
     "Confusing design costs sales. That’s why we design websites where users never get lost. Our UX/UI designs combine bold aesthetics with smart usability, giving your brand a site that looks stunning and performs even better. With Leapsters, you get design that wins hearts and conversions.",
-    href: "/webdesign",
+    href: "/services/website-design-service-in-chennai",
     images: { top: s6Top, bottom: s6Bot },
   },
     {
@@ -98,7 +98,7 @@ const SLIDES = [
     leftTitle: "Email Marketing",
     desc:
    "Your customers don’t want spam; they want value. That’s why our digital marketing services design campaigns that connect with your audience on a personal level. We design email strategies that build relationships, nurture trust, and turn one-time buyers into loyal fans.",
-    href: "/emailmarketing",
+    href: "/services/email-marketing-in-chennai",
     images: { top: s7Top, bottom: s7Bot },
   },
     {
@@ -108,7 +108,7 @@ const SLIDES = [
     leftTitle: "Social Media Marketing / Optimization",
     desc:
       "Social media isn’t about chasing likes; it’s about building communities that buy. From content calendars to paid campaigns and analytics, every move is designed to drive engagement, build trust, and deliver measurable growth.",
-    href: "/social",
+    href: "/services/social-media-marketing-in-chennai",
     images: { top: s8Top, bottom: s8Bot },
   },
  
