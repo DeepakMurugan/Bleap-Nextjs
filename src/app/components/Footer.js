@@ -199,7 +199,7 @@ export default function Footer() {
               <li><Link className="hover:text-[#FF6E00]" href="/services/website-development-service-in-chennai">Website Development</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/graphic-design-service-in-chennai">Graphic Designing</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/video-editing-service-in-chennai">Video Editing</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="/services/social-media-marketing-in-chennai">Social Media Marketing / Optimization</Link></li>
+              <li><Link className="hover:text-[#FF6E00]" href="/services/social-media-marketing-in-chennai">Social Media Marketing </Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/email-marketing-in-chennai">Email Marketing</Link></li>
             </ul>
           </div>
