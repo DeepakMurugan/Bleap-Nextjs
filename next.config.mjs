@@ -2,12 +2,27 @@
 const nextConfig = {
   async redirects() {
     return [
+
+       {
+        source: '/blog',
+        destination: 'https://blog.bleap.in',
+        permanent: true,
+      },
+      {
+        source: '/blog/:path*',
+        destination: 'https://blog.bleap.in/:path*',
+        permanent: true,
+      },
+
+      
     
       {
         source: '/services/ecommerce-solutions',
         destination: '/services/website-design-service-in-chennai',
         permanent: true,
       },
+
+
       {
         source: '/services/responsive-website-design-development',
         destination: '/services/website-design-service-in-chennai',
