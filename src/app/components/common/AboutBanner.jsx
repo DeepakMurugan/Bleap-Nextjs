@@ -11,7 +11,7 @@ export default function AboutBanner() {
         <div className="mx-auto max-w-[1200px] px-4 sm:px-6 md:px-8 lg:px-8 py-8 sm:py-10 md:py-12 lg:py-14">
         {/* Title */}
         <h2 className="text-center text-[26px] md:text-[30px] font-semibold text-[#ff6a00]">
-          About Us
+          About Uss
         </h2>
 
         {/* Text */}
