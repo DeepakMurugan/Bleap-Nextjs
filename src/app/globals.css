@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* Hide scrollbar but allow scroll */
 

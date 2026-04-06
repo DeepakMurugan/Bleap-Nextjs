@@ -24,9 +24,10 @@ const googleSans = localFont({
   display: "swap",
 });
 
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={googleSans.className}>
         <Navbar />
         <main>{children}</main>
@@ -34,4 +35,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-} 
+}

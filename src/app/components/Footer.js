@@ -182,7 +182,7 @@ export default function Footer() {
               <li><Link className="hover:text-[#FF6E00]" href="/about-us">About Us</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/team">Our Team</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/careers">Careers</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="https://bleap.in/blog" target="_blank">Blog</Link></li>
+              <li><Link className="hover:text-[#FF6E00]" href="https://bleap.in/blog/" target="_blank">Blog</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -251,8 +251,8 @@ export default function Footer() {
             <div className="mt-4 sm:mt-5 md:mt-6 space-y-3 sm:space-y-4 text-[#FFFFFF]">
               <p className="flex items-center gap-3">
                 <span className="text-[#FF6E00]">✉</span>
-                <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="mailto:info@bleap.in">
-                  info@bleap.in
+                <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="mailto:info@bleapdigital.com">
+                  info@bleapdigital.com
                 </a>
               </p>
               <p className="flex items-center gap-3">

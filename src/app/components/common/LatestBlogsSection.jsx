@@ -4,30 +4,30 @@ import Image from "next/image";
 import Link from "next/link";
 
 // ✅ Images imported from assets (as you asked)
-import blog1 from "../../assets/blogs/blog1.png";
-import blog2 from "../../assets/blogs/b22.png";
-import blog3 from "../../assets/blogs/b33.png";
+import blog1 from "../../assets/blogs/bl1.png";
+import blog2 from "../../assets/blogs/bl2.png";
+import blog3 from "../../assets/blogs/bl3.png";
 
 const BLOGS = [
   {
     id: 1,
-    title: "Unlocking the Power of Inbound Marketing: Discover Why Social Media Is a Viral!",
+    title: " Digital Marketing Strategy vs Digital Marketing Plan: What’s the Difference?",
     // subtitle: "Google Ads vs Facebook Ads: Which One Drives More Sales in 2025?",
-    href: "https://bleap.in/blog/unlocking-the-power-of-inbound-marketing-discover-why-social-media-is-a-vital-component/",
+    href: "https://bleap.in/blog/digital-marketing-strategy-vs-digital-marketing-plan-whats-the-difference/",
     image: blog1,
   },
   {
     id: 2,
-    title: "BLeap joins the award winning digital marketing agency list in 2023s",
+    title: "How Much Should a Small Business Spend on Digital Marketing?",
     // subtitle: "Google Ads vs Facebook Ads: Which One Drives More Sales in 2025?",
-    href: "https://bleap.in/blog/bleap-joins-the-award-winning-digital-marketing/",
+    href: "https://bleap.in/blog/how-much-should-a-small-business-spend-on-digital-marketing/",
     image: blog2,
   },
   {
     id: 3,
-    title: "Unlocking the Power of Inbound Marketing: Discover Why Social Media Is a Viral !",
+    title: "How Digital Marketing Helps Generate Quality Leads for Businesses",
     // subtitle: "Google Ads vs Facebook Ads: Which One Drives More Sales in 2025?",
-    href: "https://bleap.in/blog/unlocking-the-power-of-inbound-marketing-discover-why-social-media-is-a-vital-component/",
+    href: "https://bleap.in/blog/how-digital-marketing-helps-generate-quality-leads-for-businesses/",
     image: blog3,
   },
 ];
@@ -94,7 +94,7 @@ LatestBlogsSection() {
         {/* Bottom View more button */}
         <div className="mt-8 flex justify-center">
           <Link
-            href="https://bleap.in/blog"
+            href="https://bleap.in/blog/"
             target="_blank"
             className="inline-flex items-center justify-center rounded-full border border-neutral-300 bg-white px-6 py-2 text-[16px] font-medium text-neutral-700 hover:bg-[#ff6a00] hover:text-white transition-colors"
           >

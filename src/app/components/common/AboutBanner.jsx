@@ -45,7 +45,7 @@ authentic and memorable ways. Whether it’s through powerful SEO, targeted ad c
         {/* Button */}
         <div className="mt-12 flex justify-center">
           <Link
-            href="/about"
+            href="/about-us"
             className="group relative inline-flex items-center justify-center overflow-hidden
                        rounded-md border border-[#ff6a00] px-10 py-4
                        text-[16px] font-medium text-black"
