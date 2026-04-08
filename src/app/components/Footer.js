@@ -50,7 +50,7 @@ export default function Footer() {
               Our Marquee In-House Products
             </h3>
 
-            <div className="mt-4 sm:mt-5 md:mt-6 flex items-center gap-3 sm:gap-4 flex-wrap">
+            {/* <div className="mt-4 sm:mt-5 md:mt-6 flex items-center gap-3 sm:gap-4 flex-wrap">
               <Image
                 src={productVaru}
                 alt="Varu Woods"
@@ -72,7 +72,43 @@ export default function Footer() {
                 height={44}
                 className="h-auto w-[72px] sm:w-[80px] md:w-[90px]"
               />
-            </div>
+            </div> */}
+            {/* import Link from "next/link";
+import Image from "next/image"; */}
+
+<div className="mt-4 sm:mt-5 md:mt-6 flex items-center gap-3 sm:gap-4 flex-wrap">
+  
+  <Link href="https://varuwoods.com" target="_blank">
+    <Image
+      src={productVaru}
+      alt="Varu Woods"
+      width={95}
+      height={44}
+      className="h-auto w-[95px] sm:w-[105px] md:w-[120px] cursor-pointer"
+    />
+  </Link>
+
+  <Link href="https://erp4dentist.com" target="_blank">
+    <Image
+      src={productErp4}
+      alt="ERP4 Dentist"
+      width={95}
+      height={44}
+      className="h-auto w-[95px] sm:w-[105px] md:w-[120px] cursor-pointer"
+    />
+  </Link>
+
+  <Link href="https://dekhoev.com/" target="_blank">
+    <Image
+      src={productOgv}
+      alt="OGV"
+      width={90}
+      height={44}
+      className="h-auto w-[72px] sm:w-[80px] md:w-[90px] cursor-pointer"
+    />
+  </Link>
+
+</div>
           </div>
 
           {/* Right: Partners + Follow */}
