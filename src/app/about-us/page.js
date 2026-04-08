@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Discover Bleap, a results-driven digital marketing agency in Chennai. We offer SEO, PPC, social media marketing, website design, video editing, and creative solutions to boost your brand’s growth, online visibility, and lead generation.",
   alternates: {
-    canonical: "https://www.bleap.in/services/seo-service-in-chennai",
+    canonical: "https://www.bleap.in/about-us",
 
 
   },

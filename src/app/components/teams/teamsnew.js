@@ -21,20 +21,20 @@ import management3Hover from "../../assets/team/abishai2.jpg";
 import management4 from "../../assets/team/giri.jpg";
 import management4Hover from "../../assets/team/giri2.jpg";
 
-import social1 from "../../assets/team/t1.png";
-import social1Hover from "../../assets/team/t1.png";
+import social1 from "../../assets/team/av.png";
+import social1Hover from "../../assets/team/av.png";
 
-import social2 from "../../assets/team/t1.png";
-import social2Hover from "../../assets/team/t1.png";
+import social2 from "../../assets/team/av.png";
+import social2Hover from "../../assets/team/av.png";
 
-import social3 from "../../assets/team/t1.png";
-import social3Hover from "../../assets/team/t1.png";
+import social3 from "../../assets/team/av.png";
+import social3Hover from "../../assets/team/av.png";
 
-import social4 from "../../assets/team/t1.png";
-import social4Hover from "../../assets/team/t1.png";
+import social4 from "../../assets/team/av.png";
+import social4Hover from "../../assets/team/av.png";
 
-import social5 from "../../assets/team/t1.png";
-import social5Hover from "../../assets/team/t1.png";
+import social5 from "../../assets/team/av.png";
+import social5Hover from "../../assets/team/av.png";
 
 import web1 from "../../assets/team/deepak.jpg";
 import web1Hover from "../../assets/team/deepak2.jpg";
@@ -42,11 +42,11 @@ import web1Hover from "../../assets/team/deepak2.jpg";
 import web2 from "../../assets/team/sinamuthu.jpg";
 import web2Hover from "../../assets/team/sinamuthu2.jpg";
 
-import web3 from "../../assets/team/t1.png";
-import web3Hover from "../../assets/team/t1.png";
+import web3 from "../../assets/team/av.png";
+import web3Hover from "../../assets/team/av.png";
 
-import web4 from "../../assets/team/t1.png";
-import web4Hover from "../../assets/team/t1.png";
+import web4 from "../../assets/team/av.png";
+import web4Hover from "../../assets/team/av.png";
 
 import web5 from "../../assets/team/vv1.png";
 import web5Hover from "../../assets/team/vv2.png";
@@ -60,29 +60,29 @@ import seo2Hover from "../../assets/team/hasumathi2.jpg";
 import seo3 from "../../assets/team/saritha.jpg";
 import seo3Hover from "../../assets/team/saritha2.jpg";
 
-import seo4 from "../../assets/team/t1.png";
-import seo4Hover from "../../assets/team/t1.png";
+import seo4 from "../../assets/team/av.png";
+import seo4Hover from "../../assets/team/av.png";
 
-import seo5 from "../../assets/team/t1.png";
-import seo5Hover from "../../assets/team/t1.png";
+import seo5 from "../../assets/team/av.png";
+import seo5Hover from "../../assets/team/av.png";
 
-import design1 from "../../assets/team/t1.png";
-import design1Hover from "../../assets/team/t1.png";
+import design1 from "../../assets/team/av.png";
+import design1Hover from "../../assets/team/av.png";
 
-import design2 from "../../assets/team/t1.png";
-import design2Hover from "../../assets/team/t1.png";
+import design2 from "../../assets/team/av.png";
+import design2Hover from "../../assets/team/av.png";
 
 import design3 from "../../assets/team/abhishek.jpg";
 import design3Hover from "../../assets/team/abhishek2.jpg";
 
-import design4 from "../../assets/team/t1.png";
-import design4Hover from "../../assets/team/t1.png";
+import design4 from "../../assets/team/av.png";
+import design4Hover from "../../assets/team/av.png";
 
-import video1 from "../../assets/team/t1.png";
-import video1Hover from "../../assets/team/t1.png";
+import video1 from "../../assets/team/av.png";
+import video1Hover from "../../assets/team/av.png";
 
-import video2 from "../../assets/team/t1.png";
-import video2Hover from "../../assets/team/t1.png";
+import video2 from "../../assets/team/av.png";
+import video2Hover from "../../assets/team/av.png";
 
 const TEAM_SECTIONS = [
   {
@@ -139,7 +139,7 @@ const TEAM_SECTIONS = [
         id: 12,
         name: "Sinnamuthu",
         designation: "Full Stack Developer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: web2,
         hoverImage: web2Hover,
       },
@@ -147,7 +147,7 @@ const TEAM_SECTIONS = [
         id: 13,
         name: "Arun",
         designation: "backend developer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: web3,
         hoverImage: web3Hover,
       },
@@ -155,7 +155,7 @@ const TEAM_SECTIONS = [
         id: 14,
         name: "Damodaran",
         designation: "UI UX Designer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: web4,
         hoverImage: web4Hover,
       },
@@ -163,7 +163,7 @@ const TEAM_SECTIONS = [
         id: 15,
         name: "Vijay",
         designation: "Intern",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: web5,
         hoverImage: web5Hover,
       },
@@ -178,7 +178,7 @@ const TEAM_SECTIONS = [
         id: 6,
         name: "Priya N",
         designation: "Social Media Manager",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: social1,
         hoverImage: social1Hover,
       },
@@ -224,7 +224,7 @@ const TEAM_SECTIONS = [
         id: 16,
         name: "Gowtham",
         designation: "SEO Lead",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: seo1,
         hoverImage: seo1Hover,
       },
@@ -232,7 +232,7 @@ const TEAM_SECTIONS = [
         id: 17,
         name: "hasumathi",
         designation: "SEO Analyst",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: seo2,
         hoverImage: seo2Hover,
       },
@@ -240,7 +240,7 @@ const TEAM_SECTIONS = [
         id: 18,
         name: "saritha",
         designation: "Technical SEO Executive",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: seo3,
         hoverImage: seo3Hover,
       },
@@ -248,7 +248,7 @@ const TEAM_SECTIONS = [
         id: 19,
         name: "Ruban",
         designation: "SEO Executive",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: seo4,
         hoverImage: seo4Hover,
       },
@@ -256,7 +256,7 @@ const TEAM_SECTIONS = [
         id: 20,
         name: "kajal",
         designation: "SEO Executive",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: seo5,
         hoverImage: seo5Hover,
       },
@@ -270,7 +270,7 @@ const TEAM_SECTIONS = [
         id: 21,
         name: "Mani Bro",
         designation: "Graphic Designer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: design1,
         hoverImage: design1Hover,
       },
@@ -278,7 +278,7 @@ const TEAM_SECTIONS = [
         id: 22,
         name: "Sanjai",
         designation: "Brand Designer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: design2,
         hoverImage: design2Hover,
       },
@@ -286,7 +286,7 @@ const TEAM_SECTIONS = [
         id: 23,
         name: "Abishek",
         designation: "Visual Designer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: design3,
         hoverImage: design3Hover,
       },
@@ -294,7 +294,7 @@ const TEAM_SECTIONS = [
         id: 24,
         name: "Siva",
         designation: "Creative Designer",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: design4,
         hoverImage: design4Hover,
       },
@@ -308,7 +308,7 @@ const TEAM_SECTIONS = [
         id: 25,
         name: "Joseph",
         designation: "Video Editor",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: video1,
         hoverImage: video1Hover,
       },
@@ -316,7 +316,7 @@ const TEAM_SECTIONS = [
         id: 26,
         name: "Jai",
         designation: "Motion Graphics Artist",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "#",
         image: video2,
         hoverImage: video2Hover,
       },

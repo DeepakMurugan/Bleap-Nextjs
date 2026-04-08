@@ -40,8 +40,23 @@ export default function Home() {
     },
   ];
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Bleap",
+    url: "https://www.bleap.in/",
+  };
+
   return (
     <>
+      {/* ✅ WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <HeroMore />
       <AboutBanner />
       <DarkServicesScroll5 />
