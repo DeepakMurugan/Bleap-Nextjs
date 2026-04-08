@@ -249,7 +249,7 @@ const TEAM_SECTIONS = [
       },
     ],
   },
-  
+
   {
     id: "social-media",
     title: "Social Media",
@@ -403,30 +403,8 @@ const TEAM_SECTIONS = [
         image: video2,
         hoverImage: video2Hover,
       },
-      {
-        id: 32,
-        name: "Aravind",
-        designation: "Senior Video Editor",
-        linkedin: "#",
-        image: video3,
-        hoverImage: video3Hover,
-      },
-      {
-        id: 33,
-        name: "Naveen",
-        designation: "Reels Editor",
-        linkedin: "#",
-        image: video4,
-        hoverImage: video4Hover,
-      },
-      {
-        id: 34,
-        name: "Dinesh",
-        designation: "VFX Artist",
-        linkedin: "#",
-        image: video5,
-        hoverImage: video5Hover,
-      },
+  
+
     ],
   },
 ];
