@@ -1,5 +1,5 @@
 
-import TeamShowcasePage from "../components/teams/teamsnew";
+import TeamShowcasePage from "../components/teams/teamsfinal";
 /** @type {import("next").Metadata} */
 export const metadata = {
   title: "Meet Our Team | Digital Marketing Experts in Chennai - BLeap",
