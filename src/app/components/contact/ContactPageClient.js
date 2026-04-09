@@ -14,6 +14,17 @@ import iconYoutube from "../../assets/footer/fu.png";
 
 export default function ContactPageClient() {
   const offices = [
+        {
+      city: "Chennai",
+      company: "Teynampet",
+      address: [
+        "46/97, Poes Main Road, Teynampet,",
+        "Chennai – 600 018,",
+        "Tamil Nadu, India",
+      ],
+      email: "info@bleapdigital.com",
+      phone: "+91 9382809420",
+    },
     {
       city: "Bangalore",
       company: "Hustlehub Tech Park,",
@@ -26,17 +37,7 @@ export default function ContactPageClient() {
       email: "info@bleapdigital.com",
       phone: "+91 9382809420",
     },
-    {
-      city: "Chennai",
-      company: "Teynampet",
-      address: [
-        "46/97, Poes Main Road, Teynampet,",
-        "Chennai – 600 018,",
-        "Tamil Nadu, India",
-      ],
-      email: "info@bleap.in",
-      phone: "+91 9382809420",
-    },
+
     {
       city: "Mumbai",
       company: "9, Prem Kiran,",
@@ -129,21 +130,22 @@ export default function ContactPageClient() {
         </h1>
 
         <div className="mt-10 sm:mt-14 grid grid-cols-1 lg:grid-cols-[320px_minmax(0,1fr)] gap-10 lg:gap-16 items-start">
-          <div className="w-full max-w-[260px] sm:max-w-[320px] lg:max-w-[260px]">
-            <h2 className="text-[#f97316] text-[24px] sm:text-[28px] font-medium leading-[1.2]">
-              We’d love to hear from you
-            </h2>
+          
+             <div className=" hidden sm:block w-full max-w-[260px] sm:max-w-[320px] lg:max-w-[260px]">
+                <h2 className="text-[#f97316] text-[24px] sm:text-[28px] font-medium leading-[1.2]">
+                  We’d love to hear from you
+                </h2>
 
-            <div className="mt-8 space-y-6 text-[#6b6b6b]">
-              <div className="flex items-start gap-3">
-                <span className="mt-0 text-[#f97316] text-lg">✉</span>
-                <a
-                  href="mailto:info@bleap.in"
-                  className="text-[16px] sm:text-[20px] break-all hover:text-[#f97316] transition-colors"
-                >
-                  info@bleap.in
-                </a>
-              </div>
+                  <div className="mt-8 space-y-6 text-[#6b6b6b]">
+                    <div className="flex items-start gap-3">
+                      <span className="mt-0 text-[#f97316] text-lg">✉</span>
+                      <a
+                        href="mailto:info@bleapdigital.com"
+                        className="text-[16px] sm:text-[20px] break-all hover:text-[#f97316] transition-colors"
+                      >
+                        info@bleapdigital.com
+                      </a>
+                    </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1 text-[#f97316]">
@@ -157,12 +159,12 @@ export default function ContactPageClient() {
                   >
                     +91 93828 09420
                   </a>
-                  <a
+                  {/* <a
                     href="tel:+914448545327"
                     className="block hover:text-[#f97316] transition-colors"
                   >
                     +91 44 4854 5327
-                  </a>
+                  </a> */}
                 </div>
               </div>
 

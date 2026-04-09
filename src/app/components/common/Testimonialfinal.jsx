@@ -153,18 +153,7 @@ export default function Testimonialfinal() {
 
         {/* ================= MOBILE / TABLET ================= */}
         <div className="overflow-hidden lg:hidden">
-            <div className="marquee-mobile flex w-max gap-3 sm:gap-4 hover:[animation-play-state:paused]"
-            
-           onTouchStart={(e) => {
-            e.currentTarget.style.animationPlayState = "paused";
-          }}
-          onTouchEnd={(e) => {
-            e.currentTarget.style.animationPlayState = "running";
-          }}
-                    
-                    
-            
-            >
+          <div className="marquee-mobile flex w-max gap-3 sm:gap-4">
             {mobileLoopCards.map((item, index) =>
               item.type === "featured" ? (
                 <div

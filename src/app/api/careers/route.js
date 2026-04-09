@@ -59,7 +59,7 @@ const sendEmail = async (data) => {
   };
 
   const adminMailOptions = {
-    from: '"Neelu" <neelu@bleapdigital.com>',
+    from: `"${fullName}" <neelu@bleapdigital.com>`,
     to: process.env.ADMIN_EMAIL,
     replyTo: process.env.ADMIN_EMAIL,
     subject: `New Career Application - ${jobTitle}`,

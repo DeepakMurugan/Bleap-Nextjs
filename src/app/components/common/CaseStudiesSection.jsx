@@ -44,7 +44,7 @@ export default function CaseStudiesSection() {
       {/* <div className="mx-auto container px-6 lg:px-10 py-12"> */}
         <div className="mx-auto container px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-10 md:py-12 lg:py-12">
         {/* Title */}
-        <h2 className="text-center text-[22px] md:text-[24px] font-semibold text-neutral-900">
+        <h2 className="text-center text-[25px] md:text-[30px] font-semibold text-neutral-900">
           Explore Our <span className="text-[#ff6a00]">Case studies</span>
         </h2>
 

@@ -240,6 +240,37 @@ import Image from "next/image"; */}
             </ul>
           </div>
 
+
+          {/* Chennai */}
+          <div className="lg:col-span-4">
+            <h4 className="text-[#FF6E00] text-[20px] sm:text-[21px] md:text-[22px] font-medium">
+              Chennai
+            </h4>
+            <p className="mt-4 sm:mt-5 md:mt-6 text-[15px] sm:text-[16px] leading-6 sm:leading-7 text-[#FFFFFF]">
+              Teynampet <br />
+              46/97, Poes Main Road, Teynampet, <br />
+              Chennai – 600 018 Tamil Nadu, India.
+            </p>
+
+            <div className="mt-4 sm:mt-5 md:mt-6 space-y-3 sm:space-y-4 text-[#FFFFFF]">
+              <p className="flex items-center gap-3">
+                <span className="text-[#FF6E00]">✉</span>
+                <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="mailto:info@bleapdigital.com">
+                  info@bleapdigital.com
+                </a>
+              </p>
+              <p className="flex items-center gap-3">
+                <span className="mt-0 text-[#FF6E00]">
+                  <Phone size={17} strokeWidth={2} />
+                </span>
+                <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="tel:+919382809420">
+                  +91 9382809420
+                </a>
+              </p>
+            </div>
+          </div>
+          
+
           {/* Bangalore */}
           <div className="lg:col-span-3">
             <h4 className="text-[#FF6E00] text-[20px] sm:text-[21px] md:text-[22px] font-medium">
@@ -273,34 +304,10 @@ import Image from "next/image"; */}
             </div>
           </div>
 
-          {/* Chennai */}
-          <div className="lg:col-span-4">
-            <h4 className="text-[#FF6E00] text-[20px] sm:text-[21px] md:text-[22px] font-medium">
-              Chennai
-            </h4>
-            <p className="mt-4 sm:mt-5 md:mt-6 text-[15px] sm:text-[16px] leading-6 sm:leading-7 text-[#FFFFFF]">
-              Teynampet <br />
-              46/97, Poes Main Road, Teynampet, <br />
-              Chennai – 600 018 Tamil Nadu, India.
-            </p>
+          
 
-            <div className="mt-4 sm:mt-5 md:mt-6 space-y-3 sm:space-y-4 text-[#FFFFFF]">
-              <p className="flex items-center gap-3">
-                <span className="text-[#FF6E00]">✉</span>
-                <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="mailto:info@bleapdigital.com">
-                  info@bleapdigital.com
-                </a>
-              </p>
-              <p className="flex items-center gap-3">
-                <span className="mt-0 text-[#FF6E00]">
-                  <Phone size={17} strokeWidth={2} />
-                </span>
-                <a className="hover:text-[#FF6E00] text-[15px] sm:text-[16px]" href="tel:+919382809420">
-                  +91 9382809420
-                </a>
-              </p>
-            </div>
-          </div>
+
+
         </div>
 
         {/* =========================
