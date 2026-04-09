@@ -5,6 +5,7 @@ import FaqSection from "./components/common/FaqSection";
 import LatestBlogsSection from "./components/common/LatestBlogsSection";
 import DarkServicesScroll5 from "./components/common/DarkServicesScroll5";
 import PortfolioGrid from "./components/common/PortfolioGrid";
+import TestimonialsMosaic from "./components/common/TestimonialsMosaic";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -62,6 +63,8 @@ export default function Home() {
       <DarkServicesScroll5 />
       <ClientsMarquee />
       <PortfolioGrid />
+                       <TestimonialsMosaic />
+      
       <LatestBlogsSection />
       <FaqSection items={FAQS} />
     </>
