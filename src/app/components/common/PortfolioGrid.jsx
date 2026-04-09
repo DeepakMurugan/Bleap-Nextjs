@@ -32,7 +32,7 @@ const PORTFOLIO = [
 export default function PortfolioGrid() {
   return (
     <section className="bg-[#F5F5F7]">
-      <div className="mx-auto container px-6 lg:px-10 py-1">
+      <div className="mx-auto container px-6 lg:px-10 pb-10">
         {/* Title */}
         <h2 className="text-center text-[25px] md:text-[28px] font-semibold text-neutral-900">
           Our <span className="text-[#ff6a00]">Portfolio</span>
