@@ -269,7 +269,7 @@ import Image from "next/image"; */}
               </p>
             </div>
           </div>
-          
+
 
           {/* Bangalore */}
           <div className="lg:col-span-3">
@@ -319,11 +319,11 @@ import Image from "next/image"; */}
           </p>
 
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-[14px] sm:text-[15px] md:text-[16px] text-[#FFFFFF]">
-            <Link className="hover:text-white" href="/write-for-us">Write For Us</Link>
+            <Link className="hover:text-white" href="#">Write For Us</Link>
             <span className="text-white/30">|</span>
-            <Link className="hover:text-white" href="/terms">Terms &amp; Conditions</Link>
+            <Link className="hover:text-white" href="#">Terms &amp; Conditions</Link>
             <span className="text-white/30">|</span>
-            <Link className="hover:text-white" href="/privacy">Privacy Policy</Link>
+            <Link className="hover:text-white" href="#">Privacy Policy</Link>
           </div>
         </div>
       </div>

@@ -164,7 +164,7 @@ const TEAM_SECTIONS = [
       {
         id: 11,
         name: "Deepak Murugan",
-        designation: "Frontend Developer",
+        designation: "Front End Developer",
         linkedin: "https://www.linkedin.com/in/deepakmurugan4/",
         image: web1,
         hoverImage: web1Hover,
@@ -305,7 +305,7 @@ const TEAM_SECTIONS = [
       {
         id: 28,
         name: "Keerthana",
-        designation: "Social Media Executive ",
+        designation: "Sr.Executive - Social Media & Meta Ads",
         linkedin: "#",
         image: social7,
         hoverImage: social7Hover,
