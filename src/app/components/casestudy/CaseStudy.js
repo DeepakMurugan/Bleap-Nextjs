@@ -10,6 +10,13 @@ import p3 from "../../assets/blogs/c3.png";
 
 const PORTFOLIO = [
   {
+    title: "Nardil",
+    chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
+    img: p1,
+    href: "/casestudy/nardil",
+  },
+
+  {
     title: "Sundaram Motors -  Marcdez benz",
     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
     img: p1,

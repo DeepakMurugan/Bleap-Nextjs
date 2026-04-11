@@ -41,17 +41,17 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-12 text-[18px] font-normal text-[#6D6D6D]">
+        <nav className="hidden lg:flex items-center gap-12 text-[16px] font-normal text-[#6D6D6D]">
           <Link
             href="/"
-            className="text-[#FF6A00] transition-colors duration-300 text-[18px]"
+            className="text-[#FF6A00] transition-colors duration-300 text-[16px]"
           >
             Home
           </Link>
 
           <Link
             href="/about-us"
-            className="transition-colors duration-300 hover:text-[#FF6A00] text-[18px] "
+            className="transition-colors duration-300 hover:text-[#FF6A00] text-[16px] "
           >
             About Us
           </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <button className="flex items-center gap-1 transition-colors duration-300 hover:text-[#FF6A00] text-[18px] ">
+            <button className="flex items-center gap-1 transition-colors duration-300 hover:text-[#FF6A00] text-[16px] ">
               <span>Services</span>
               <ChevronDown size={18} className="mt-[2px]" />
             </button>
@@ -90,17 +90,24 @@ export default function Navbar() {
 
           <Link
             href="/team"
-            className="transition-colors duration-300 hover:text-[#FF6A00] text-[18px] "
+            className="transition-colors duration-300 hover:text-[#FF6A00] text-[16px] "
           >
             Team
           </Link>
 
           <Link
             href="/careers"
-            className="transition-colors duration-300 hover:text-[#FF6A00]  text-[18px] "
+            className="transition-colors duration-300 hover:text-[#FF6A00]  text-[16px] "
           >
             Careers
           </Link>
+             <Link
+              href="/casestudy"
+              className="border-b border-[#EFEFEF] py-4"
+              onClick={() => setMenuOpen(false)}
+            >
+              Case Studies
+            </Link>
 
           <Link
             href="https://bleap.in/blog/"
@@ -115,7 +122,7 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-4 rounded-full border border-[#FF6A00] px-4 py-2 text-[18px] font-normal text-[#FF6A00] transition-all duration-300 hover:bg-[#FF6A00] hover:text-white"
+            className="group inline-flex items-center gap-4 rounded-full border border-[#FF6A00] px-4 py-2 text-[16px] font-normal text-[#FF6A00] transition-all duration-300 hover:bg-[#FF6A00] hover:text-white"
           >
             <span>Contact Us</span>
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FF6A00] text-white transition-all duration-300 group-hover:bg-white group-hover:text-[#FF6A00]">
@@ -209,6 +216,14 @@ export default function Navbar() {
             >
               Careers
             </Link>
+              <Link
+              href="/casestudy"
+              className="border-b border-[#EFEFEF] py-4"
+              onClick={() => setMenuOpen(false)}
+            >
+              Case Studies
+            </Link>
+
 
             <Link
               href="https://bleap.in/blog/"
