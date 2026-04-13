@@ -7,12 +7,13 @@ import Link from "next/link";
 import p1 from "../../assets/blogs/c1.png";
 import p2 from "../../assets/blogs/c2.png";
 import p3 from "../../assets/blogs/c3.png";
+import p4 from "../../assets/blogs/c4.png";
 
 const PORTFOLIO = [
   {
     title: "Nardil",
     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
-    img: p1,
+    img: p4,
     href: "/casestudy/nardil",
   },
 
@@ -20,57 +21,57 @@ const PORTFOLIO = [
     title: "Sundaram Motors -  Marcdez benz",
     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
     img: p1,
-    href: "/case-studies/meridian",
+    href: "/casestudy/meridian",
   },
   {
     title: "Whitecaps",
     chips: ["Website", "Branding"],
     img: p2,
-    href: "/case-studies/project-two",
+    href: "/casestudy/Whitecaps",
   },
-  {
-    title: "Meridian",
-    chips: ["Performance", "SEO"],
-    img: p3,
-    href: "/case-studies/project-three",
-  },
-  {
-    title: "Sundaram Motors -  Marcdez benz",
-    chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
-    img: p1,
-    href: "/case-studies/meridian",
-  },
-  {
-    title: "Whitecaps",
-    chips: ["Website", "Branding"],
-    img: p2,
-    href: "/case-studies/project-two",
-  },
-  {
-    title: "Meridian",
-    chips: ["Performance", "SEO"],
-    img: p3,
-    href: "/case-studies/project-three",
-  },
-  {
-    title: "Sundaram Motors -  Marcdez benz",
-    chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
-    img: p1,
-    href: "/case-studies/meridian",
-  },
+//   {
+//     title: "Meridian",
+//     chips: ["Performance", "SEO"],
+//     img: p3,
+//     href: "/case-studies/project-three",
+//   },
+//   {
+//     title: "Sundaram Motors -  Marcdez benz",
+//     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
+//     img: p1,
+//     href: "/case-studies/meridian",
+//   },
+//   {
+//     title: "Whitecaps",
+//     chips: ["Website", "Branding"],
+//     img: p2,
+//     href: "/case-studies/project-two",
+//   },
+//   {
+//     title: "Meridian",
+//     chips: ["Performance", "SEO"],
+//     img: p3,
+//     href: "/case-studies/project-three",
+//   },
+//   {
+//     title: "Sundaram Motors -  Marcdez benz",
+//     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
+//     img: p1,
+//     href: "/case-studies/meridian",
+//   },
  
- {
-    title: "Whitecaps",
-    chips: ["Website", "Branding"],
-    img: p2,
-    href: "/case-studies/project-two",
-  },
-  {
-    title: "Meridian",
-    chips: ["Performance", "SEO"],
-    img: p3,
-    href: "/case-studies/project-three",
-  },
+//  {
+//     title: "Whitecaps",
+//     chips: ["Website", "Branding"],
+//     img: p2,
+//     href: "/case-studies/project-two",
+//   },
+//   {
+//     title: "Meridian",
+//     chips: ["Performance", "SEO"],
+//     img: p3,
+//     href: "/case-studies/project-three",
+//   },
   
 ];
 

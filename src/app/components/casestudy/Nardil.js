@@ -285,7 +285,11 @@ export default function Nardil() {
               <p className="mt-2 text-sm text-white/90">Contact us today</p>
             </div>
             <button className="inline-flex w-fit items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#f5820d] transition hover:opacity-90">
-              Contact Us
+             <a
+             href="/contact"
+             className="text-sm font-semibold text-[#f5820d] transition hover:opacity-90" >
+             Contact Us
+            </a>
             </button>
           </div>
         </div>
@@ -307,7 +311,10 @@ export default function Nardil() {
             </div>
 
             <button className="inline-flex w-fit items-center rounded-full border border-[#d8d8d8] bg-white px-6 py-3 text-sm font-medium text-[#222222] transition hover:bg-[#fafafa]">
-              View All Case Studies
+              <a href="/casestudy">
+               View All Case Studies
+                </a>  
+            
             </button>
           </div>
         </div>
