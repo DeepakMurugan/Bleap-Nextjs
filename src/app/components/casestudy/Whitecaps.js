@@ -7,31 +7,31 @@ import seoImg from "../../assets/blogs/waa.png";
 import seoImg1 from "../../assets/blogs/s11.png";
 import seoImg2 from "../../assets/blogs/s22.png";
 import cour from "../../assets/blogs/tela.png";
-
-
-import localSeoImg from "../../assets/blogs/waaf.png";
 import linkedinImg from "../../assets/blogs/nar.png";
 import gsec from "../../assets/blogs/gs.png";
+import c1 from "../../assets/blogs/ca1.png";
+import c2 from "../../assets/blogs/ca2.png";
+
+import c3 from "../../assets/blogs/ca3.png";
+import c4 from "../../assets/blogs/ca4.png";
 
 
 const infoCards = [
-  { title: "Client Name", value: "Whitecaps" },
-  { title: "Industry", value: "Education & Training Industry" },
-  { title: "Services", value: "SEO" },
+  { title: "Client Name", value: "Whitecaps", img: c1 },
+  { title: "Industry", value: "Education & Training Industry", img: c2 },
+  { title: "Services", value: "SEO", img: c3 },
   {
     title: "Tools",
     value: "Semrush, Google Analytics, Search Console",
+    img: c4,
   },
 ];
-
-
 
 const metrics = [
   { label: "Clicks increased by", value: "53%" },
   { label: "Impressions Boosted by", value: "269%" },
   { label: "New Users Improved by", value: "68.3%" },
 ];
-
 
 const challengeCards = [
   {
@@ -88,7 +88,6 @@ const blogRows = [
 export default function Whitecaps() {
   return (
     <main className="bg-[#f2f2f2] text-[#111111]">
-      {/* HERO */}
       <section className="bg-[#050505] px-4 pt-10 text-white sm:px-6 lg:px-8 lg:pt-12">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-5xl text-center">
@@ -105,11 +104,16 @@ export default function Whitecaps() {
 
           <div className="mx-auto mt-8 grid max-w-5xl gap-4 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {infoCards.map((item) => (
-              <InfoCard key={item.title} title={item.title} value={item.value} />
+              <InfoCard
+                key={item.title}
+                title={item.title}
+                value={item.value}
+                img={item.img}
+              />
             ))}
           </div>
 
-          <div className="mx-auto mt-8 max-w-5xl translate-y-8 overflow-hidden  ">
+          <div className="mx-auto mt-8 max-w-5xl translate-y-8 overflow-hidden">
             <Image
               src={heroChartImg}
               alt="Whitecaps case study hero visual"
@@ -120,8 +124,7 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      {/* STATS */}
-     <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+      <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-4 sm:grid-cols-3 sm:gap-6">
             {metrics.map((item) => (
@@ -141,13 +144,11 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      {/* ABOUT + CHALLENGES */}
       <section className="bg-[#f2f2f2] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-12">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
             <div>
               <div className="flex items-start gap-3">
-                  {/* <div className="mt-1 h-10 w-10 rounded-full border border-[#e5c9b2] bg-white" /> */}
                 <div>
                   <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#6a6a6a]">
                     Whitecaps
@@ -206,9 +207,9 @@ export default function Whitecaps() {
         </div>
       </section>
 
-        <section className="bg-[#f2f2f2] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-12">
+      <section className="bg-[#f2f2f2] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-12">
         <div className="mx-auto max-w-6xl">
- <h2 className="text-3xl font-semibold text-[#FF6D00] sm:text-[44px]">
+          <h2 className="text-3xl font-semibold text-[#FF6D00] sm:text-[44px]">
             Solutions
           </h2>
 
@@ -225,35 +226,30 @@ export default function Whitecaps() {
             Whitecaps.
           </p>
 
-          <div className="mt-6 rounded-[4px] border border-white/10 bg-white/5 p-2">
+          <div className="mt-6 rounded-[4px] bg-white p-2">
             <div className="grid gap-4 md:grid-cols-2">
-              <div className="overflow-hidden ">
+              <div className="overflow-hidden">
                 <Image
                   src={seoImg1}
-                  alt="SEO screenshot"
+                  alt="SEO screenshot one"
                   className="h-full w-full object-contain"
                 />
               </div>
-              <div className="overflow-hidden ">
+              <div className="overflow-hidden">
                 <Image
                   src={seoImg2}
-                  alt="UX screenshot"
+                  alt="SEO screenshot two"
                   className="h-full w-full object-contain"
                 />
               </div>
             </div>
           </div>
-
         </div>
+      </section>
 
-        </section>
-
-      {/* BLACK CONTENT BAND */}
       <section className="bg-[#050505] px-4 py-10 text-white sm:px-6 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-6xl">
-         
-
-          <div className="mt-10 text-center">
+          <div className="mt-2 text-center">
             <h2 className="text-3xl font-semibold text-white sm:text-[42px]">
               Website Content Structure
             </h2>
@@ -289,7 +285,9 @@ export default function Whitecaps() {
               </div>
 
               <div className="hidden items-center justify-center lg:flex">
-                <span className="text-[28px] font-light text-[#FF6D00]">→ → →</span>
+                <span className="text-[28px] font-light text-[#FF6D00]">
+                  → → →
+                </span>
               </div>
 
               <div className="text-center">
@@ -335,7 +333,6 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      {/* COMPETITOR + TABLE */}
       <section className="bg-[#f2f2f2] px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
@@ -385,7 +382,7 @@ export default function Whitecaps() {
                 <div className="border-b border-[#e5ddd4] px-4 py-4 md:border-r">
                   {row.type}
                 </div>
-                <div className="border-b border-[#e5ddd4] px-4 py-4 whitespace-pre-line text-[#ea8a2c]">
+                <div className="whitespace-pre-line border-b border-[#e5ddd4] px-4 py-4 text-[#ea8a2c]">
                   {row.title}
                 </div>
               </div>
@@ -394,7 +391,6 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      {/* GBP */}
       <section className="bg-[#f2f2f2] px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl text-center">
           <h2 className="text-3xl font-semibold text-[#111111] sm:text-[40px]">
@@ -406,18 +402,17 @@ export default function Whitecaps() {
             visibility, driving more foot traffic and inquiries.
           </p>
 
-          <h2 className="text-3xl font-semibold text-[#FF8224] sm:text-[35px]">
+          <h2 className="mt-8 text-3xl font-semibold text-[#FF8224] sm:text-[35px]">
             Results
           </h2>
 
-            <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-[4px] border border-[#e5ddd4] bg-white p-3 shadow-sm">
+          <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-[4px] border border-[#e5ddd4] bg-white p-3 shadow-sm">
             <Image
               src={gsec}
               alt="Google business profile section"
               className="h-auto w-full object-cover"
             />
           </div>
-
 
           <p className="mx-auto mt-3 max-w-5xl text-sm leading-7 text-[#4f4f4f]">
             As a result, Bleapdigital&apos;s SEO team achieved higher visibility
@@ -426,18 +421,11 @@ export default function Whitecaps() {
             and a significant rise in inquiries, ensuring a steady flow of leads
             and driving substantial growth for Whitecaps.
           </p>
-
-          
-
-        
         </div>
       </section>
 
-      {/* RESULTS */}
       <section className="bg-[#f2f2f2] px-4 pb-10 pt-6 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl text-center">
-          
-
           <h3 className="mt-8 text-2xl font-semibold text-[#111111] sm:text-[34px]">
             Watch our clients says
           </h3>
@@ -452,7 +440,6 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-[#f2f2f2] px-4 pb-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl rounded-[4px] bg-[#ff7300] px-5 py-5 text-white">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -474,7 +461,6 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      {/* CASE STUDIES INTRO */}
       <section className="bg-[#f2f2f2] px-4 pb-14 pt-1 sm:px-6 lg:px-8 lg:pb-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#b0b0b0]">
@@ -505,9 +491,17 @@ export default function Whitecaps() {
   );
 }
 
-function InfoCard({ title, value }) {
+function InfoCard({ title, value, img }) {
   return (
     <div className="rounded-[22px] border border-white/10 bg-white/5 px-5 py-5 backdrop-blur-sm">
+      <div className="mb-4 flex justify-center">
+        <Image
+          src={img}
+          alt={title}
+          className="h-10 w-10 object-contain"
+        />
+      </div>
+
       <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/65">
         {title}
       </p>

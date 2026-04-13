@@ -7,12 +7,21 @@ import seoImg from "../../assets/blogs/narc2.jpg";
 import localSeoImg from "../../assets/blogs/narc3.jpg";
 import linkedinImg from "../../assets/blogs/narc4.jpg";
 import reviewAvatarImg from "../../assets/blogs/narc5.png";
+import c1 from "../../assets/blogs/ca1.png";
+import c2 from "../../assets/blogs/ca2.png";
+
+import c3 from "../../assets/blogs/ca3.png";
+import c4 from "../../assets/blogs/ca4.png";
+
 
 const metrics = [
   { label: "Clicks", value: "1.3k" },
   { label: "Impressions", value: "20.5k" },
   { label: "CTR", value: "6.34%" },
 ];
+
+
+
 
 const keywordRows = [
   {
@@ -90,20 +99,29 @@ export default function Nardil() {
           </div>
 
           <div className="mx-auto mt-10 grid max-w-5xl gap-4 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-            <InfoCard title="Client Name" value="NaRDiL Enterprise" />
-            <InfoCard
-              title="Industry"
-              value="Estimation Detailing & Virtual Construction (B2B Services)"
-            />
-            <InfoCard
-              title="Services"
-              value="SEO & Social Media Management"
-            />
-            <InfoCard
-              title="Tools"
-              value="Semrush, Google Analytics & Search Console"
-            />
+           
+           
+           
+           <InfoCard title="Client Name" value="NaRDiL Enterprise" img={c1} />
+<InfoCard
+  title="Industry"
+  value="Estimation Detailing & Virtual Construction (B2B Services)"
+  img={c2}
+/>
+<InfoCard
+  title="Services"
+  value="SEO & Social Media Management"
+  img={c3}
+/>
+<InfoCard
+  title="Tools"
+  value="Semrush, Google Analytics & Search Console"
+  img={c4}
+/>
           </div>
+
+
+          
 
           <div className="mx-auto mt-8 max-w-5xl overflow-hidden rounded-[28px] border border-white/10 bg-white p-3 shadow-[0_28px_80px_rgba(0,0,0,0.35)] sm:p-5">
             <Image
@@ -113,6 +131,7 @@ export default function Nardil() {
               priority
             />
           </div>
+          
         </div>
       </section>
 
@@ -323,9 +342,22 @@ export default function Nardil() {
   );
 }
 
-function InfoCard({ title, value }) {
+
+
+
+function InfoCard({ title, value, img }) {
   return (
     <div className="rounded-[22px] border border-white/10 bg-white/5 px-5 py-5 backdrop-blur-sm">
+      <div className="mb-4 flex justify-center">
+        <Image
+          src={img}
+          alt={title}
+          width={40}
+          height={40}
+          className="object-contain"
+        />
+      </div>
+
       <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/65">
         {title}
       </p>
@@ -335,3 +367,5 @@ function InfoCard({ title, value }) {
     </div>
   );
 }
+
+
