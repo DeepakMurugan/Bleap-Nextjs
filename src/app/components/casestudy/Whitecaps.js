@@ -1,122 +1,127 @@
 import Image from "next/image";
 
-import heroChartImg from "../../assets/blogs/nah.png";
-import aboutImg from "../../assets/blogs/narab.png";
-import uxUiImg from "../../assets/blogs/narc1.png";
-import seoImg from "../../assets/blogs/narc2.jpg";
-import localSeoImg from "../../assets/blogs/narc3.jpg";
-import linkedinImg from "../../assets/blogs/narc4.jpg";
-import reviewAvatarImg from "../../assets/blogs/narc5.png";
+import heroChartImg from "../../assets/blogs/wh.png";
+import aboutImg from "../../assets/blogs/hh.png";
+import uxUiImg from "../../assets/blogs/waaf.png";
+import seoImg from "../../assets/blogs/waa.png";
+import seoImg1 from "../../assets/blogs/s11.png";
+import seoImg2 from "../../assets/blogs/s22.png";
+import cour from "../../assets/blogs/tela.png";
+
+
+import localSeoImg from "../../assets/blogs/waaf.png";
+import linkedinImg from "../../assets/blogs/nar.png";
+import gsec from "../../assets/blogs/gs.png";
+
+
+const infoCards = [
+  { title: "Client Name", value: "Whitecaps" },
+  { title: "Industry", value: "Education & Training Industry" },
+  { title: "Services", value: "SEO" },
+  {
+    title: "Tools",
+    value: "Semrush, Google Analytics, Search Console",
+  },
+];
+
+
 
 const metrics = [
-  { label: "Clicks", value: "1.3k" },
-  { label: "Impressions", value: "20.5k" },
-  { label: "CTR", value: "6.34%" },
+  { label: "Clicks increased by", value: "53%" },
+  { label: "Impressions Boosted by", value: "269%" },
+  { label: "New Users Improved by", value: "68.3%" },
 ];
 
-const keywordRows = [
+
+const challengeCards = [
   {
-    keyword: "Concrete estimation service",
-    page: "Home Page - Estimation Detailing & Virtual Construction",
+    title: "Lack of Local Enquiries",
+    text: "Despite being well established, Whitecaps struggled to attract local students, resulting in a low number of inquiries and in-person visits to explore their courses.",
   },
   {
-    keyword: "Rebar Estimating Services",
-    page: "Home Page - Estimation Detailing & Virtual Construction",
-  },
-  {
-    keyword: "Stud rail estimation services",
-    page: "Service page - Stud Estimation",
-  },
-  {
-    keyword: "Stud rail detailing services",
-    page: "Service page - Stud Estimation",
-  },
-  {
-    keyword: "3D Rebar detailing",
-    page: "Blog page - 3d Rebar Detailing a Revolutionary Approach to Successful Construction Projects",
-  },
-  {
-    keyword: "Concrete estimating and take-off service",
-    page: "Blog - Tips for Concrete Takeoff for Estimators and Contractors.",
+    title: "Low Online Visibility",
+    text: `The institute was not ranking well for important keywords like "baking courses in Bangalore" or "best baking institute in India", making it hard for potential students to find them online.`,
   },
 ];
 
-const solutions = [
+const analysisCards = [
   {
-    title: "UX/UI & Website Development Improvements",
-    image: uxUiImg,
-    alt: "UX and website development improvement placeholder",
-    body: "We provided strategic design feedback to enhance the website’s user interface and overall usability. The goal was to make the experience smoother for both prospective clients and returning visitors. Clear service flows, mobile responsiveness, and cleaner layouts were introduced to keep users engaged and reduce bounce rates.",
+    title: "Keyword Volume",
+    text: "We implemented a focused approach to keyword optimization by boosting monthly clicks, ensuring maximum visibility, and targeting the right audience through search engines.",
   },
   {
-    title: "Search Engine Optimization (SEO)",
-    image: seoImg,
-    alt: "SEO dashboard placeholder",
-    body: "We began with a detailed SEO audit and quickly implemented key improvements across NaRDil’s service and blog pages. We updated meta tags, enhanced on-page content, fixed broken internal links, optimized URLs, and added schema markup. We also strengthened domain authority through relevant PR placements, forum submissions, and strategic guest posting.",
-    boy: "To strengthen NaRDil’s domain authority, we focused on building high-quality backlinks through targeted forum submissions, relevant PR placements, and strategic guest posting on industry-specific websites. These efforts helped establish NaRDil as a trusted voice in their field and improved their ability to rank for high-intent keywords tied directly to their core services.",
- 
-},
+    title: "Monthly Blog Posts",
+    text: "We initially planned to publish blogs per month, focusing on building topical authority. This strategic approach helped improve trust, credibility, and overall organic performance.",
+  },
   {
-    title: "Local SEO Optimization",
-    image: localSeoImg,
-    alt: "Local SEO listing placeholder",
-    body: "To improve local search visibility, we standardized NaRDil’s NAP details across platforms, submitted the business to reputable directories, and optimized their Google My Business profile with accurate service information, visual assets, and regular updates.",
-    boy: " Most importantly, we optimized their Google My Business (GMB) profile by adding accurate business details, showcasing their services, uploading high-quality images, and posting regular updates. These efforts helped NaRDil show up more often in Google Maps and local search results, right when potential clients were looking for construction estimation services nearby.",
-  
+    title: "Guest Posts",
+    text: "We successfully contributed guest blogs to relevant platforms, improving visibility, credibility, backlinks, rankings, and overall online presence.",
+  },
+];
 
-
-},
+const blogRows = [
   {
-    title: "LinkedIn Management",
-    image: linkedinImg,
-    alt: "LinkedIn profile placeholder",
-    body: "We optimized NaRDil’s LinkedIn presence to strengthen their credibility and connect with the right B2B audience. We refined the company profile with clear, professional branding, updated service descriptions, and keyword-rich content to improve discoverability. To position NaRDil as an industry authority, we also shared targeted content tailored to decision-makers in the construction and estimation space. These efforts helped attract more relevant connections, build trust, and generate new business opportunities through LinkedIn.",
+    category: "Culinary Guides",
+    type: "Informative Guide",
+    title:
+      "12 Types of Pastry every professional baker must know\nWhat is Fondant Cake and is it worth trying?",
+  },
+  {
+    category: "Culinary Arts",
+    type: "Educational Article",
+    title: "Importance of baking and pastry in the world of culinary",
+  },
+  {
+    category: "Baking Essentials",
+    type: "Usage Guide",
+    title:
+      "9 Cake Baking Tools: You Must have While Baking\nThe Best Baking Ingredients guide for your expert Kitchen",
+  },
+  {
+    category: "Business & Entrepreneurship",
+    type: "How-To-Guide",
+    title:
+      "Oven to Empire: The Ultimate Guide To How To Start a Baking Business",
   },
 ];
 
 export default function Whitecaps() {
   return (
-    <main className="bg-[#f3f3f3] text-[#111111]">
-      <section className="bg-[#050505] px-4 pb-14 pt-10 sm:px-6 lg:px-8 lg:pb-20 lg:pt-12">
-        <div className="mx-auto container">
-          <div className="mx-auto max-w-6xl text-center text-white">
+    <main className="bg-[#f2f2f2] text-[#111111]">
+      {/* HERO */}
+      <section className="bg-[#050505] px-4 pt-10 text-white sm:px-6 lg:px-8 lg:pt-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-5xl text-center">
             <p className="text-xs font-medium uppercase tracking-[0.28em] text-[#FF6D00] sm:text-sm">
-              Case Study
+              SEO Case Study
             </p>
-            <h1 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl lg:text-[52px]">
-              How We Increased Organic <br className="hidden sm:block" />
-              Traffic for NaRDiL
+
+            <h1 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl lg:text-[48px]">
+              How we Increased 441.4% Organic Traffic for
+              <br className="hidden sm:block" />
+              Whitecaps: A SEO Case Study
             </h1>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-5xl gap-4 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-            <InfoCard title="Client Name" value="NaRDiL Enterprise" />
-            <InfoCard
-              title="Industry"
-              value="Estimation Detailing & Virtual Construction (B2B Services)"
-            />
-            <InfoCard
-              title="Services"
-              value="SEO & Social Media Management"
-            />
-            <InfoCard
-              title="Tools"
-              value="Semrush, Google Analytics & Search Console"
-            />
+          <div className="mx-auto mt-8 grid max-w-5xl gap-4 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {infoCards.map((item) => (
+              <InfoCard key={item.title} title={item.title} value={item.value} />
+            ))}
           </div>
 
-          <div className="mx-auto mt-8 max-w-5xl overflow-hidden rounded-[28px] border border-white/10 bg-white p-3 shadow-[0_28px_80px_rgba(0,0,0,0.35)] sm:p-5">
+          <div className="mx-auto mt-8 max-w-5xl translate-y-8 overflow-hidden  ">
             <Image
               src={heroChartImg}
-              alt="Performance chart placeholder"
-              className="h-auto w-full rounded-[20px] object-contain"
+              alt="Whitecaps case study hero visual"
+              className="h-auto w-full object-cover"
               priority
             />
           </div>
         </div>
       </section>
 
-      <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+      {/* STATS */}
+     <section className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-4 sm:grid-cols-3 sm:gap-6">
             {metrics.map((item) => (
@@ -136,186 +141,363 @@ export default function Whitecaps() {
         </div>
       </section>
 
-      <section className="px-4 pb-10 sm:px-6 lg:px-8 lg:pb-14">
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#FF6D00]">
-              NaRDiL
-            </p>
-            <h2 className="mt-2 text-3xl font-semibold leading-none text-[#FF6D00] sm:text-[54px]">
-              About the <br /> Client
-            </h2>
-            <div className="mt-6 overflow-hidden rounded-[22px] bg-white shadow-sm">
-              <Image
-                src={aboutImg}
-                alt="About client placeholder"
-                className="h-[220px] w-full object-cover sm:h-[260px]"
-              />
-            </div>
-          </div>
-
-          <div className="space-y-8 lg:pt-6">
+      {/* ABOUT + CHALLENGES */}
+      <section className="bg-[#f2f2f2] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
             <div>
-              <p className="text-sm leading-7 text-[#404040]">
-                NaRDiL Enterprise has been a trusted name in US construction support services since 2005. Known for its expertise in Estimation, Detailing, BIM, and Virtual Construction, the company has consistently delivered reliable and high-quality solutions. NaRDiL’s commitment to professionalism, client satisfaction, and employee well-being sets it apart as a leader in the industry.
+              <div className="flex items-start gap-3">
+                  {/* <div className="mt-1 h-10 w-10 rounded-full border border-[#e5c9b2] bg-white" /> */}
+                <div>
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#6a6a6a]">
+                    Whitecaps
+                  </p>
+                  <h2 className="mt-1 text-3xl font-semibold leading-none text-[#FF6D00] sm:text-[50px]">
+                    About the
+                    <br />
+                    client
+                  </h2>
+                </div>
+              </div>
+
+              <div className="mt-5 overflow-hidden bg-white shadow-sm">
+                <Image
+                  src={aboutImg}
+                  alt="About Whitecaps"
+                  className="h-[185px] w-full object-cover sm:h-[220px]"
+                />
+              </div>
+            </div>
+
+            <div>
+              <p className="text-[16px] leading-7 text-[#444444]">
+                Whitecaps, a leading baking institute in Bangalore since 2016,
+                is led by expert chefs trained in baking capitals like France
+                and Italy. Their courses are designed for everyone, whether
+                you’re a beginner exploring baking or an aspiring entrepreneur.
+                They have successfully trained over 105+ batches. Whitecaps
+                continues to set the benchmark for excellence in baking
+                education.
               </p>
-            </div>
 
-            <div>
-              <h2 className="text-4xl font-semibold leading-none text-[#FF6D00] sm:text-[60px] lg:text-[72px]">
+              <h2 className="mt-6 text-4xl font-semibold leading-none text-[#FF6D00] sm:text-[58px]">
                 The Challenges
               </h2>
-              <p className="mt-4 text-sm leading-7 text-[#404040]">
-                NaRDiL’s strong industry reputation laid a solid foundation for digital growth, yet there were key opportunities to better align their online presence with their expertise. The website required user experience enhancements to improve navigation and engagement. It also faced mobile responsive issues that hindered accessibility across devices. Additionally, content across key pages had not yet been fully optimized to target high-value, industry-specific keywords.
+
+              <div className="mt-4 grid gap-5 sm:grid-cols-2">
+                {challengeCards.map((item) => (
+                  <div key={item.title}>
+                    <h3 className="text-lg font-semibold text-[#111111] sm:text-[22px]">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-[15px] leading-7 text-[#4b4b4b]">
+                      {item.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-3 text-[16px] leading-7 text-[#444444]">
+                These challenges made it difficult for Whitecaps to reach their
+                target audience and grow their enrollment.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#050505] px-4 py-12 text-white sm:px-6 lg:px-8 lg:py-16">
+        <section className="bg-[#f2f2f2] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-12">
         <div className="mx-auto max-w-6xl">
-          <div className="text-center">
-            <h2 className="text-4xl font-semibold text-[#FF6D00] sm:text-[56px]">
-              Solutions
-            </h2>
-          </div>
+ <h2 className="text-3xl font-semibold text-[#FF6D00] sm:text-[44px]">
+            Solutions
+          </h2>
 
-          <div className="mt-10 space-y-10 lg:space-y-12">
-            {solutions.map((item, index) => (
-              <div key={item.title} className="text-center">
-                <h3 className="text-2xl font-semibold sm:text-[34px]">
-                  {item.title}
-                </h3>
-                <p className="mx-auto mt-4 max-w-5xl text-sm leading-7 text-white/80">
-                  {item.body}
-                </p>
+          <p className="mt-3 text-[16px] leading-7 text-black/80">
+            Bleap Digital SEO team implemented a comprehensive strategy,
+            revamping the website with a user-friendly design and targeting
+            unique keywords. Additionally, we created a content funnel to
+            attract audiences at every stage and optimized the Google Business
+            Profile to enhance local search visibility and drive walk-ins.
+          </p>
 
-                <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-[18px] border border-white/10  p-2 shadow-[0_18px_50px_rgba(0,0,0,0.28)] sm:p-3">
-                  <Image
-                    src={item.image}
-                    alt={item.alt}
-                    className={`h-auto w-full  object-contain ${index === 0 ? "max-h-[420px]" : "max-h-[500px]"}`}
-                  />
-                </div>
-                  <p className="mx-auto mt-4 max-w-5xl text-sm leading-7 text-white/80">
-                  {item.boy}
-                </p>
+          <p className="mt-2 text-[16px] leading-7 text-black/80">
+            Read on to discover how Bleap Digital achieved remarkable growth for
+            Whitecaps.
+          </p>
+
+          <div className="mt-6 rounded-[4px] border border-white/10 bg-white/5 p-2">
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="overflow-hidden ">
+                <Image
+                  src={seoImg1}
+                  alt="SEO screenshot"
+                  className="h-full w-full object-contain"
+                />
               </div>
-            ))}
+              <div className="overflow-hidden ">
+                <Image
+                  src={seoImg2}
+                  alt="UX screenshot"
+                  className="h-full w-full object-contain"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        </div>
+
+        </section>
+
+      {/* BLACK CONTENT BAND */}
+      <section className="bg-[#050505] px-4 py-10 text-white sm:px-6 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-semibold text-[#111111] sm:text-[40px]">
-              What Our Client Says
+         
+
+          <div className="mt-10 text-center">
+            <h2 className="text-3xl font-semibold text-white sm:text-[42px]">
+              Website Content Structure
             </h2>
-            <p className="mt-4 text-sm leading-7 text-[#575757]">
-              Within just a few months of implementing the changes, NaRDiL saw a significant boost in both search rankings and user engagement. Several key pages achieved first-page rankings for highly relevant, industry-specific keywords, helping the brand connect more effectively with its target audience online.
+            <p className="mx-auto mt-3 max-w-5xl text-sm leading-7 text-white/80">
+              A well-designed page builds trust and credibility. We created
+              website pages that detailed the courses offered by Whitecaps,
+              clearly outlining what students would learn. This helped potential
+              customers easily understand the value that Whitecaps offers.
             </p>
           </div>
 
-          <div className="mt-8 overflow-hidden rounded-[20px] border border-[#d7d7d7] bg-white shadow-sm">
-            <div className="grid grid-cols-1 border-b border-[#d7d7d7] bg-[#f8f8f8] text-sm font-semibold text-[#222222] sm:grid-cols-[0.42fr_0.58fr]">
-              <div className="border-b border-[#d7d7d7] px-4 py-4 sm:border-b-0 sm:border-r">Keyword</div>
-              <div className="px-4 py-4">Page</div>
+          <div className="mt-8">
+            <h3 className="text-center text-2xl font-semibold text-[#FF6D00] sm:text-[32px]">
+              Home Page Revamp
+            </h3>
+
+            <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_auto_1fr] lg:items-start">
+              <div className="text-center">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-white/65">
+                  Before
+                </p>
+                <div className="mx-auto max-w-[340px] overflow-hidden border border-white/10 bg-white p-2">
+                  <Image
+                    src={seoImg}
+                    alt="Before home page revamp"
+                    className="h-[160px] w-full object-cover"
+                  />
+                </div>
+                <p className="mx-auto mt-3 max-w-[340px] text-sm leading-7 text-white/75">
+                  The home page lacked clarity and structure, making it hard for
+                  visitors and search engines to understand the core offerings.
+                </p>
+              </div>
+
+              <div className="hidden items-center justify-center lg:flex">
+                <span className="text-[28px] font-light text-[#FF6D00]">→ → →</span>
+              </div>
+
+              <div className="text-center">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-white/65">
+                  After
+                </p>
+                <div className="mx-auto max-w-[340px] overflow-hidden border border-white/10 bg-white p-2">
+                  <Image
+                    src={uxUiImg}
+                    alt="After home page revamp"
+                    className="h-[160px] w-full object-cover"
+                  />
+                </div>
+                <p className="mx-auto mt-3 max-w-[340px] text-sm leading-7 text-white/75">
+                  We revamped the home page by highlighting Whitecaps unique
+                  selling points, campus environments, course features, and
+                  impressive placement records, ensuring a seamless user
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <h3 className="text-2xl font-semibold text-[#FF6D00] sm:text-[32px]">
+              Course Page Revamp
+            </h3>
+
+            <div className="mx-auto mt-5 max-w-[420px] overflow-hidden border border-white/10 bg-white p-2">
+              <Image
+                src={cour}
+                alt="Course page revamp"
+                className="h-[180px] w-full object-cover"
+              />
             </div>
 
-            {keywordRows.map((row, index) => (
+            <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-white/75">
+              Each course now highlights the exact skills students will master,
+              giving them a detailed roadmap of what they’ll achieve. New layout
+              ensures all information is easy to find and visually engaging.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* COMPETITOR + TABLE */}
+      <section className="bg-[#f2f2f2] px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-3xl font-semibold text-[#FF6D00] sm:text-[42px]">
+              Competitor and Keyword Analysis
+            </h2>
+            <p className="mx-auto mt-3 max-w-5xl text-sm leading-7 text-[#4b4b4b]">
+              We carefully analyzed competitors to identify gaps and
+              opportunities. Targeted keywords with high search volumes were
+              strategically incorporated into the website. We boosted visibility
+              and successfully attracted more high-quality traffic.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {analysisCards.map((item) => (
+              <div key={item.title} className="text-center">
+                <h3 className="text-xl font-semibold text-[#FF6D00]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-[#555555]">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 overflow-hidden border border-[#e5ddd4] bg-white">
+            <div className="grid grid-cols-1 border-b border-[#e5ddd4] bg-[#fbf8f5] text-sm font-semibold text-[#222222] md:grid-cols-[0.24fr_0.24fr_0.52fr]">
+              <div className="border-b border-[#e5ddd4] px-4 py-4 md:border-b-0 md:border-r">
+                Content Category
+              </div>
+              <div className="border-b border-[#e5ddd4] px-4 py-4 md:border-b-0 md:border-r">
+                Type of article
+              </div>
+              <div className="px-4 py-4">Blog Title</div>
+            </div>
+
+            {blogRows.map((row, index) => (
               <div
-                key={`${row.keyword}-${index}`}
-                className="grid grid-cols-1 text-sm text-[#333333] sm:grid-cols-[0.42fr_0.58fr]"
+                key={`${row.category}-${index}`}
+                className="grid grid-cols-1 text-sm md:grid-cols-[0.24fr_0.24fr_0.52fr]"
               >
-                <div className="border-b border-[#d7d7d7] px-4 py-4 sm:border-r">
-                  {row.keyword}
+                <div className="border-b border-[#e5ddd4] px-4 py-4 md:border-r">
+                  {row.category}
                 </div>
-                <div className="border-b border-[#d7d7d7] px-4 py-4 text-[#ea8a2c]">
-                  {row.page}
+                <div className="border-b border-[#e5ddd4] px-4 py-4 md:border-r">
+                  {row.type}
+                </div>
+                <div className="border-b border-[#e5ddd4] px-4 py-4 whitespace-pre-line text-[#ea8a2c]">
+                  {row.title}
                 </div>
               </div>
             ))}
           </div>
-  <div className="mx-auto mt-12  max-w-4xl overflow-hidden rounded-[20px]   sm:p-5">
+        </div>
+      </section>
+
+      {/* GBP */}
+      <section className="bg-[#f2f2f2] px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl text-center">
+          <h2 className="text-3xl font-semibold text-[#111111] sm:text-[40px]">
+            Google Business Profile Optimization
+          </h2>
+          <p className="mx-auto mt-3 max-w-5xl text-sm leading-7 text-[#4f4f4f]">
+            We regularly updated posts on their Google Business Profile and
+            optimized local keywords. This enhanced their local search
+            visibility, driving more foot traffic and inquiries.
+          </p>
+
+          <h2 className="text-3xl font-semibold text-[#FF8224] sm:text-[35px]">
+            Results
+          </h2>
+
+            <div className="mx-auto mt-6 max-w-4xl overflow-hidden rounded-[4px] border border-[#e5ddd4] bg-white p-3 shadow-sm">
             <Image
-              src={reviewAvatarImg}
-              alt="Performance chart placeholder"
-              className="h-auto w-full rounded-[20px] object-cover"
-              priority
+              src={gsec}
+              alt="Google business profile section"
+              className="h-auto w-full object-cover"
             />
           </div>
-          {/* <div className="mx-auto mt-10 max-w-4xl rounded-[20px] border border-[#d8d8d8] bg-white p-5 shadow-sm sm:p-6">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-              <div className="flex shrink-0 items-center gap-3">
-                <div className="h-12 w-12 overflow-hidden rounded-full bg-[#f6f6f6]">
-                  <Image
-                    src={reviewAvatarImg}
-                    alt="Client review avatar placeholder"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-[#222222]">
-                    NaRDiL Enterprise
-                  </div>
-                  <div className="text-xs text-[#7a7a7a]">1 review · 0 photos · 15 weeks ago</div>
-                </div>
-              </div>
-
-              <p className="text-sm leading-7 text-[#454545]">
-                We’ve been working with Bleap for social media marketing, SEO, and website development, and it’s been a great experience. Their efforts have really helped boost our online presence, and we’re seeing steady, promising results. The team is responsive, professional, and easy to work with. They understand our goals and make sure our brand reaches the right audience. Plus, the improvements they made to our mobile site have made a real difference in user experience. Overall, we’re happy with their services and excited to see even more growth with their support. Highly recommend!
-              </p>
-            </div>
-          </div> */}
 
 
+          <p className="mx-auto mt-3 max-w-5xl text-sm leading-7 text-[#4f4f4f]">
+            As a result, Bleapdigital&apos;s SEO team achieved higher visibility
+            for their core keywords, securing TOP 3 to TOP 10 positions. This
+            improvement in rankings led to a 441.4% increase in organic traffic
+            and a significant rise in inquiries, ensuring a steady flow of leads
+            and driving substantial growth for Whitecaps.
+          </p>
 
+          
+
+        
         </div>
       </section>
 
-      <section className="px-4 pb-10 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl rounded-[18px] bg-[#f5820d] px-5 py-5 text-white shadow-[0_12px_30px_rgba(245,130,13,0.25)] sm:px-8 sm:py-6">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-2xl font-semibold leading-tight sm:text-[30px]">
-                We’ll study your business and we’ll come back with big ideas
-              </p>
-              <p className="mt-2 text-sm text-white/90">Contact us today</p>
-            </div>
-            <button className="inline-flex w-fit items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#f5820d] transition hover:opacity-90">
-             <a
-             href="/contact"
-             className="text-sm font-semibold text-[#f5820d] transition hover:opacity-90" >
-             Contact Us
-            </a>
-            </button>
+      {/* RESULTS */}
+      <section className="bg-[#f2f2f2] px-4 pb-10 pt-6 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl text-center">
+          
+
+          <h3 className="mt-8 text-2xl font-semibold text-[#111111] sm:text-[34px]">
+            Watch our clients says
+          </h3>
+
+          <div className="mx-auto mt-5 max-w-3xl overflow-hidden rounded-[4px] bg-[#111111] p-2 shadow-sm">
+            <Image
+              src={linkedinImg}
+              alt="Client testimonial visual"
+              className="h-auto w-full object-cover"
+            />
           </div>
         </div>
       </section>
 
-      <section className="px-4 pb-14 pt-2 sm:px-6 lg:px-8 lg:pb-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      {/* CTA */}
+      <section className="bg-[#f2f2f2] px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl rounded-[4px] bg-[#ff7300] px-5 py-5 text-white">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#a0a0a0]">
-                Case studies
+              <p className="text-xl font-semibold leading-tight sm:text-[28px]">
+                We’ll study your business and we’ll come back
+                <br className="hidden sm:block" />
+                with big ideas.
               </p>
-              <h2 className="mt-2 text-3xl font-semibold text-[#111111] sm:text-[44px]">
+            </div>
+
+            <a
+              href="/contact"
+              className="inline-flex w-fit items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#ff7300] transition hover:opacity-90"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* CASE STUDIES INTRO */}
+      <section className="bg-[#f2f2f2] px-4 pb-14 pt-1 sm:px-6 lg:px-8 lg:pb-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#b0b0b0]">
+            Case studies
+          </p>
+
+          <div className="mt-2 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-3xl font-semibold text-[#111111] sm:text-[42px]">
                 Our Success Speaks
               </h2>
               <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5d5d5d]">
-                Take a look at how our efforts have helped clients overcome obstacles and achieve incredible results.
+                Take a look at how our efforts have helped clients overcome
+                obstacles and achieve incredible results.
               </p>
             </div>
 
-            <button className="inline-flex w-fit items-center rounded-full border border-[#d8d8d8] bg-white px-6 py-3 text-sm font-medium text-[#222222] transition hover:bg-[#fafafa]">
-              <a href="/casestudy">
-               View All Case Studies
-                </a>  
-            
-            </button>
+            <a
+              href="/casestudy"
+              className="inline-flex w-fit items-center rounded-full border border-[#d8d8d8] bg-white px-6 py-3 text-sm font-medium text-[#222222] transition hover:bg-[#fafafa]"
+            >
+              View All Case Studies
+            </a>
           </div>
         </div>
       </section>

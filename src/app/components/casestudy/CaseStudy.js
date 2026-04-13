@@ -30,7 +30,7 @@ const PORTFOLIO = [
     href: "/casestudy/whitecaps",//    
      chips: ["Performance", "SEO"],
     img: p3,
-    href: "/case-studies/project-three",
+    href: "/casestudy/whitecaps",
   },
 
 
