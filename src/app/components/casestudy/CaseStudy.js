@@ -27,18 +27,13 @@ const PORTFOLIO = [
     title: "Whitecaps",
     chips: ["Website", "Branding"],
     img: p2,
-<<<<<<< HEAD
-    href: "/casestudy/whitecaps",
-=======
-    href: "/casestudy/Whitecaps",
->>>>>>> 811612706ee434f3c2620627f69a0e220104f70e
+    href: "/casestudy/whitecaps",//    
+     chips: ["Performance", "SEO"],
+    img: p3,
+    href: "/case-studies/project-three",
   },
-//   {
-//     title: "Meridian",
-//     chips: ["Performance", "SEO"],
-//     img: p3,
-//     href: "/case-studies/project-three",
-//   },
+
+
 //   {
 //     title: "Sundaram Motors -  Marcdez benz",
 //     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
