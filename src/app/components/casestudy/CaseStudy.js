@@ -27,7 +27,11 @@ const PORTFOLIO = [
     title: "Whitecaps",
     chips: ["Website", "Branding"],
     img: p2,
+<<<<<<< HEAD
     href: "/casestudy/whitecaps",
+=======
+    href: "/casestudy/Whitecaps",
+>>>>>>> 811612706ee434f3c2620627f69a0e220104f70e
   },
 //   {
 //     title: "Meridian",
