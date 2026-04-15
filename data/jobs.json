@@ -1,0 +1,172 @@
+{
+  "settings": {
+    "allowApplicationsGlobally": true
+  },
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Social Media Executive",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-3 Years",
+      "category": "Social Media",
+      "posted": "Full Time",
+      "description": "Handle content scheduling, campaign support, creative coordination, and social media reporting across major platforms.",
+      "applyEnabled": false
+    },
+    {
+      "id": 2,
+      "title": "Social Media Manager",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "3-5 Years",
+      "category": "Social Media",
+      "posted": "Full Time",
+      "description": "Lead social media strategy, manage campaigns, oversee team execution, and drive brand growth across platforms.",
+      "applyEnabled": false
+    },
+    {
+      "id": 3,
+      "title": "Performance Marketer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "2-4 Years",
+      "category": "Marketing",
+      "posted": "Full Time",
+      "description": "Run and optimize paid campaigns across Meta and Google while improving lead quality and ROAS.",
+      "applyEnabled": true
+    },
+    {
+      "id": 4,
+      "title": "Content Writer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-3 Years",
+      "category": "Content",
+      "posted": "Full Time",
+      "description": "Create SEO-friendly blogs, website content, and marketing copies aligned with brand tone.",
+      "applyEnabled": true
+    },
+    {
+      "id": 5,
+      "title": "Content Creator",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-3 Years",
+      "category": "Content",
+      "posted": "Full Time",
+      "description": "Develop engaging video and visual content for social media and marketing campaigns.",
+      "applyEnabled": false
+    },
+    {
+      "id": 6,
+      "title": "Video Editor",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-3 Years",
+      "category": "Video",
+      "posted": "Full Time",
+      "description": "Edit reels, ads, and branded content with strong storytelling and visual consistency.",
+      "applyEnabled": true
+    },
+    {
+      "id": 7,
+      "title": "Motion Graphic Designer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "2-4 Years",
+      "category": "Design",
+      "posted": "Full Time",
+      "description": "Create engaging motion graphics and animations for ads, videos, and brand storytelling.",
+      "applyEnabled": false
+    },
+    {
+      "id": 8,
+      "title": "Graphic Designer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-3 Years",
+      "category": "Design",
+      "posted": "Full Time",
+      "description": "Design creatives for social media, branding, and digital marketing campaigns.",
+      "applyEnabled": true
+    },
+    {
+      "id": 9,
+      "title": "Creative Head",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "5+ Years",
+      "category": "Design",
+      "posted": "Full Time",
+      "description": "Lead creative direction, oversee design teams, and ensure brand consistency across all campaigns.",
+      "applyEnabled": true
+    },
+    {
+      "id": 10,
+      "title": "Backend Developer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "2-4 Years",
+      "category": "Development",
+      "posted": "Full Time",
+      "description": "Build and maintain server-side logic, APIs, and database architecture.",
+      "applyEnabled": true
+    },
+    {
+      "id": 11,
+      "title": "Frontend Developer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "2-4 Years",
+      "category": "Development",
+      "posted": "Full Time",
+      "description": "Develop responsive UI using React, Next.js, and modern frontend tools.",
+      "applyEnabled": true
+    },
+    {
+      "id": 12,
+      "title": "UI/UX Designer",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "2-4 Years",
+      "category": "Design",
+      "posted": "Full Time",
+      "description": "Design user-centric interfaces and improve user journeys for digital products.",
+      "applyEnabled": false
+    },
+    {
+      "id": 13,
+      "title": "SEO Analyst",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "2-4 Years",
+      "category": "SEO",
+      "posted": "Full Time",
+      "description": "Handle technical SEO, audits, keyword strategy, and performance tracking.",
+      "applyEnabled": true
+    },
+    {
+      "id": 14,
+      "title": "SEO Executive",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-2 Years",
+      "category": "SEO",
+      "posted": "Full Time",
+      "description": "Execute on-page and off-page SEO tasks, keyword tracking, and reporting.",
+      "applyEnabled": true
+    },
+    {
+      "id": 15,
+      "title": "Business Development Executive",
+      "location": "Chennai, Tamilnadu, India",
+      "type": "Full Time",
+      "experience": "1-3 Years",
+      "category": "Sales",
+      "posted": "Full Time",
+      "description": "Generate leads, manage outreach, and support client acquisition strategies.",
+      "applyEnabled": true
+    }
+  ]
+}

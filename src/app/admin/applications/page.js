@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Download, Eye, X, FileText, Mail, Phone, MapPin, Briefcase, LogOut } from "lucide-react";
+import { Download, Eye, X, FileText, Mail, Phone, MapPin, Briefcase, LogOut, BriefcaseBusiness } from "lucide-react";
 
 
 export default function ApplicationsPage() {
@@ -202,6 +202,13 @@ export default function ApplicationsPage() {
                 <LogOut className="h-4 w-4" />
                 {isLoggingOut ? "Logging out..." : "Logout"}
               </button>
+                <a
+                  href="/admin/jobs"
+                  className="inline-flex items-center gap-2 rounded-full border border-[#e6e6e6] bg-white px-6 py-3 text-sm font-medium text-[#333] transition hover:bg-[#f9f9f9]"
+                >
+                  <Briefcase className="h-4 w-4" />
+                  Manage Jobs
+                </a>
             </div>
           </div>
 

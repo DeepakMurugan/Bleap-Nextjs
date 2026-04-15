@@ -12,194 +12,6 @@ import {
 
 const ITEMS_PER_PAGE = 5;
 
-const CAREERS_SETTINGS = {
-  allowApplicationsGlobally: true, // set false if you want to disable all applications
-};
-
-const JOBS = [
-
-  {
-    id: 1,
-    title: "Social Media Executive",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-3 Years",
-    category: "Social Media",
-    posted: "Full Time",
-    description:
-      "Handle content scheduling, campaign support, creative coordination, and social media reporting across major platforms.",
-    applyEnabled: true,
-  },
-  {
-    id: 2,
-    title: "Social Media Manager",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "3-5 Years",
-    category: "Social Media",
-    posted: "Full Time",
-    description:
-      "Lead social media strategy, manage campaigns, oversee team execution, and drive brand growth across platforms.",
-    applyEnabled: true,
-  },
-  {
-    id: 3,
-    title: "Performance Marketer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "2-4 Years",
-    category: "Marketing",
-    posted: "Full Time",
-    description:
-      "Run and optimize paid campaigns across Meta and Google while improving lead quality and ROAS.",
-    applyEnabled: true,
-  },
-  {
-    id: 4,
-    title: "Content Writer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-3 Years",
-    category: "Content",
-    posted: "Full Time",
-    description:
-      "Create SEO-friendly blogs, website content, and marketing copies aligned with brand tone.",
-    applyEnabled: true,
-  },
-  {
-    id: 5,
-    title: "Content Creator",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-3 Years",
-    category: "Content",
-    posted: "Full Time",
-    description:
-      "Develop engaging video and visual content for social media and marketing campaigns.",
-    applyEnabled: true,
-  },
-  {
-    id: 6,
-    title: "Video Editor",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-3 Years",
-    category: "Video",
-    posted: "Full Time",
-    description:
-      "Edit reels, ads, and branded content with strong storytelling and visual consistency.",
-    applyEnabled: true,
-  },
-  {
-    id: 7,
-    title: "Motion Graphic Designer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "2-4 Years",
-    category: "Design",
-    posted: "Full Time",
-    description:
-      "Create engaging motion graphics and animations for ads, videos, and brand storytelling.",
-    applyEnabled: true,
-  },
-  {
-    id: 8,
-    title: "Graphic Designer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-3 Years",
-    category: "Design",
-    posted: "Full Time",
-    description:
-      "Design creatives for social media, branding, and digital marketing campaigns.",
-    applyEnabled: true,
-  },
-  {
-    id: 9,
-    title: "Creative Head",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "5+ Years",
-    category: "Design",
-    posted: "Full Time",
-    description:
-      "Lead creative direction, oversee design teams, and ensure brand consistency across all campaigns.",
-    applyEnabled: true,
-  },
-  {
-    id: 10,
-    title: "Backend Developer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "2-4 Years",
-    category: "Development",
-    posted: "Full Time",
-    description:
-      "Build and maintain server-side logic, APIs, and database architecture.",
-    applyEnabled: true,
-  },
-  {
-    id: 11,
-    title: "Frontend Developer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "2-4 Years",
-    category: "Development",
-    posted: "Full Time",
-    description:
-      "Develop responsive UI using React, Next.js, and modern frontend tools.",
-    applyEnabled: true,
-  },
-  {
-    id: 12,
-    title: "UI/UX Designer",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "2-4 Years",
-    category: "Design",
-    posted: "Full Time",
-    description:
-      "Design user-centric interfaces and improve user journeys for digital products.",
-    applyEnabled: false, // closed role
-  },
-  {
-    id: 13,
-    title: "SEO Analyst",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "2-4 Years",
-    category: "SEO",
-    posted: "Full Time",
-    description:
-      "Handle technical SEO, audits, keyword strategy, and performance tracking.",
-    applyEnabled: true,
-  },
-  {
-    id: 14,
-    title: "SEO Executive",
-    location: "Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-2 Years",
-    category: "SEO",
-    posted: "Full Time",
-    description:
-      "Execute on-page and off-page SEO tasks, keyword tracking, and reporting.",
-    applyEnabled: true,
-  },
-  {
-    id: 15,
-    title: "Business Development Executive",
-    location: " Chennai, Tamilnadu, India",
-    type: "Full Time",
-    experience: "1-3 Years",
-    category: "Sales",
-    posted: "Full Time",
-    description:
-      "Generate leads, manage outreach, and support client acquisition strategies.",
-    applyEnabled: true,
-  },
-];
-
 const FILTERS = ["All Jobs", "Full Time", "Internship"];
 
 const INITIAL_FORM = {
@@ -212,6 +24,10 @@ const INITIAL_FORM = {
 };
 
 export default function CareersPage() {
+  const [jobs, setJobs] = useState([]);
+  const [allowApplicationsGlobally, setAllowApplicationsGlobally] = useState(true);
+  const [jobsLoading, setJobsLoading] = useState(true);
+
   const [selectedFilter, setSelectedFilter] = useState("All Jobs");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedJob, setSelectedJob] = useState("");
@@ -223,8 +39,19 @@ export default function CareersPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+  useEffect(() => {
+    fetch("/api/jobs")
+      .then((res) => res.json())
+      .then((data) => {
+        setJobs(Array.isArray(data.jobs) ? data.jobs : []);
+        setAllowApplicationsGlobally(data.settings?.allowApplicationsGlobally ?? true);
+      })
+      .catch(() => {})
+      .finally(() => setJobsLoading(false));
+  }, []);
+
   const filteredJobs = useMemo(() => {
-    return JOBS.filter((job) => {
+    return jobs.filter((job) => {
       const matchFilter =
         selectedFilter === "All Jobs" ? true : job.type === selectedFilter;
 
@@ -244,7 +71,7 @@ export default function CareersPage() {
 
       return matchFilter && matchSearch && matchDropdown;
     });
-  }, [selectedFilter, searchTerm, selectedJob]);
+  }, [jobs, selectedFilter, searchTerm, selectedJob]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -276,7 +103,7 @@ export default function CareersPage() {
   };
 
   const openApplyModal = (job) => {
-    if (!CAREERS_SETTINGS.allowApplicationsGlobally || !job.applyEnabled) return;
+    if (!allowApplicationsGlobally || !job.applyEnabled) return;
 
     setApplyFor(job);
     setIsModalOpen(true);
@@ -426,7 +253,7 @@ export default function CareersPage() {
                     className="h-11 w-full appearance-none rounded-full border border-[#f2c9a0] bg-[#fffdfb] px-4 pr-10 text-sm text-[#444] outline-none transition focus:border-[#f28c28]"
                   >
                     <option value="">All Jobs</option>
-                    {[...new Set(JOBS.map((job) => job.title))].map((jobTitle) => (
+                    {[...new Set(jobs.map((job) => job.title))].map((jobTitle) => (
                       <option key={jobTitle} value={jobTitle}>
                         {jobTitle}
                       </option>
@@ -437,10 +264,14 @@ export default function CareersPage() {
               </div>
 
               <div className="mt-6 space-y-4">
-                {paginatedJobs.length > 0 ? (
+                {jobsLoading ? (
+                  <div className="rounded-2xl border border-dashed border-[#e7d1bb] bg-[#fffaf5] p-10 text-center">
+                    <p className="text-sm text-[#8b7a6a]">Loading openings...</p>
+                  </div>
+                ) : paginatedJobs.length > 0 ? (
                   paginatedJobs.map((job) => {
                     const isApplyDisabled =
-                      !CAREERS_SETTINGS.allowApplicationsGlobally || !job.applyEnabled;
+                      !allowApplicationsGlobally || !job.applyEnabled;
 
                     return (
                       <article
@@ -585,7 +416,7 @@ export default function CareersPage() {
               <input type="hidden" name="jobTitle" value={applyFor.title} readOnly />
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#555]">
+                <label className="mb-1 block text-sm font-medium text-[#555]">
                   Full Name
                 </label>
                 <input
@@ -595,12 +426,12 @@ export default function CareersPage() {
                   value={formData.fullName}
                   onChange={handleInputChange}
                   required
-                  className="h-12 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
+                  className="h-10 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
                 />
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#555]">
+                <label className="mb-1 block text-sm font-medium text-[#555]">
                   Email Address
                 </label>
                 <input
@@ -610,12 +441,12 @@ export default function CareersPage() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="h-12 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
+                  className="h-10 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
                 />
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#555]">
+                <label className="mb-1 block text-sm font-medium text-[#555]">
                   Phone Number
                 </label>
                 <input
@@ -625,12 +456,12 @@ export default function CareersPage() {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  className="h-12 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
+                  className="h-10 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
                 />
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#555]">
+                <label className="mb-1 block text-sm font-medium text-[#555]">
                   Current Location
                 </label>
                 <input
@@ -640,16 +471,16 @@ export default function CareersPage() {
                   value={formData.location}
                   onChange={handleInputChange}
                   required
-                  className="h-12 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
+                  className="h-10 w-full rounded-xl border border-[#e6e6e6] px-4 text-sm outline-none transition focus:border-[#f28c28]"
                 />
               </div>
 
               <div className="md:col-span-2">
-                <label className="mb-2 block text-sm font-medium text-[#555]">
+                <label className="mb-1 block text-xs font-medium text-[#555]">
                   Cover Letter / Message
                 </label>
                 <textarea
-                  rows={5}
+                  rows={2}
                   name="message"
                   placeholder="Write a short message..."
                   value={formData.message}
@@ -660,7 +491,7 @@ export default function CareersPage() {
               </div>
 
               <div className="md:col-span-2">
-                <label className="mb-2 block text-sm font-medium text-[#555]">
+                <label className="mb-1 block text-sm font-medium text-[#555]">
                   Upload Resume
                 </label>
                 <input
