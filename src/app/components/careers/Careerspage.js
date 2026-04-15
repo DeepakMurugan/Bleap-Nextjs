@@ -387,29 +387,29 @@ export default function CareersPage() {
       </main>
 
       {isModalOpen && applyFor && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-6">
-          <div className="relative w-full max-w-2xl rounded-3xl bg-white p-5 shadow-2xl sm:p-7">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-4 sm:py-6">
+          <div className="relative w-full max-w-sm sm:max-w-2xl rounded-2xl sm:rounded-3xl bg-white p-4 sm:p-6 shadow-2xl max-h-[90vh] overflow-y-auto">
             <button
               onClick={closeApplyModal}
-              className="absolute right-4 top-4 rounded-full p-2 text-[#777] transition hover:bg-[#f5f5f5]"
+              className="absolute right-3 top-3 sm:right-4 sm:top-4 rounded-full p-1.5 sm:p-2 text-[#777] transition hover:bg-[#f5f5f5]"
             >
-              <X className="h-5 w-5" />
+              <X className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
 
-            <div className="pr-10">
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-[#a3a3a3]">
+            <div className="pr-8 sm:pr-10">
+              <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.16em] text-[#a3a3a3]">
                 Apply Now
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-[#333]">
+              <h3 className="mt-2 text-xl sm:text-2xl font-semibold text-[#333]">
                 {applyFor.title}
               </h3>
-              <p className="mt-2 text-sm text-[#777]">
+              <p className="mt-2 text-xs sm:text-sm text-[#777]">
                 Fill in your details and upload your resume.
               </p>
             </div>
 
             <form
-              className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2"
+              className="mt-4 sm:mt-6 grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2"
               onSubmit={handleFormSubmit}
             >
               <input type="hidden" name="jobId" value={applyFor.id} readOnly />
@@ -514,21 +514,21 @@ export default function CareersPage() {
                 </div>
               )}
 
-              <div className="mt-2 flex flex-col gap-3 md:col-span-2 sm:flex-row sm:justify-end">
+              <div className="mt-4 sm:mt-6 flex flex-col gap-2 sm:gap-3 md:col-span-2">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full rounded-full bg-[#f28c28] px-4 sm:px-6 py-2.5 sm:py-3 text-sm font-medium text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {isSubmitting ? "Submitting..." : "Submit Application"}
+                </button>
                 <button
                   type="button"
                   onClick={closeApplyModal}
                   disabled={isSubmitting}
-                  className="rounded-full border border-[#dadada] px-6 py-3 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8] disabled:opacity-50"
+                  className="w-full rounded-full border border-[#dadada] px-4 sm:px-6 py-2.5 sm:py-3 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8] disabled:opacity-50"
                 >
                   Cancel
-                </button>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="rounded-full bg-[#f28c28] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  {isSubmitting ? "Submitting..." : "Submit Application"}
                 </button>
               </div>
             </form>

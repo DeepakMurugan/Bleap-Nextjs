@@ -290,33 +290,36 @@ export default function AdminJobsPage() {
           {/* Header */}
           <div className="mb-6 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
             <div>
-              <h1 className="text-3xl font-bold text-[#333]">Job Roles</h1>
-              <p className="mt-1 text-sm text-[#666]">
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#333]">Job Roles</h1>
+              <p className="mt-1 text-xs sm:text-sm text-[#666]">
                 Manage job listings shown on the careers page.
               </p>
             </div>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex w-full flex-wrap gap-2 sm:gap-3 sm:w-auto">
               <button
                 onClick={openAddModal}
-                className="inline-flex items-center gap-2 rounded-full bg-[#f28c28] px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 rounded-full bg-[#f28c28] px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-medium text-white transition hover:opacity-90"
               >
                 <Plus className="h-4 w-4" />
-                Add Job
+                <span className="hidden sm:inline">Add Job</span>
+                <span className="sm:hidden">Add</span>
               </button>
               <a
                 href="/admin/applications"
-                className="inline-flex items-center gap-2 rounded-full border border-[#e6e6e6] bg-white px-5 py-2.5 text-sm font-medium text-[#333] transition hover:bg-[#f9f9f9]"
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 rounded-full border border-[#e6e6e6] bg-white px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-medium text-[#333] transition hover:bg-[#f9f9f9]"
               >
                 <FileText className="h-4 w-4" />
-                Applications
+                <span className="hidden sm:inline">Applications</span>
+                <span className="sm:hidden">Apps</span>
               </a>
               <button
                 onClick={handleLogout}
                 disabled={isLoggingOut}
-                className="inline-flex items-center gap-2 rounded-full border border-[#e6e6e6] bg-white px-5 py-2.5 text-sm font-medium text-[#333] transition hover:bg-[#f9f9f9] disabled:opacity-50"
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 rounded-full border border-[#e6e6e6] bg-white px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-medium text-[#333] transition hover:bg-[#f9f9f9] disabled:opacity-50"
               >
                 <LogOut className="h-4 w-4" />
-                {isLoggingOut ? "Logging out..." : "Logout"}
+                {isLoggingOut ? "..." : <span className="hidden sm:inline">Logout</span>}
+                <span className="sm:hidden">{isLoggingOut ? "..." : "Out"}</span>
               </button>
             </div>
           </div>
@@ -437,19 +440,19 @@ export default function AdminJobsPage() {
 
       {/* ── Add Job Modal ───────────────────────────────────────────────────── */}
       {showAddModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-6">
-          <div className="relative w-full max-w-xl rounded-3xl bg-white p-6 shadow-2xl sm:p-8">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-4 sm:py-6">
+          <div className="relative w-full max-w-sm sm:max-w-xl rounded-2xl sm:rounded-3xl bg-white p-4 sm:p-6 shadow-2xl max-h-[90vh] overflow-y-auto">
             <button
               onClick={closeAddModal}
-              className="absolute right-4 top-4 rounded-full p-2 text-[#777] transition hover:bg-[#f5f5f5]"
+              className="absolute right-3 top-3 sm:right-4 sm:top-4 rounded-full p-1.5 sm:p-2 text-[#777] transition hover:bg-[#f5f5f5]"
             >
-              <X className="h-5 w-5" />
+              <X className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
 
-            <h2 className="text-xl font-semibold text-[#333]">Add New Job</h2>
-            <p className="mt-1 text-sm text-[#888]">Fill in the details for the new role.</p>
+            <h2 className="text-lg sm:text-xl font-semibold text-[#333]">Add New Job</h2>
+            <p className="mt-1 text-xs sm:text-sm text-[#888]">Fill in the details for the new role.</p>
 
-            <form className="mt-5 space-y-4" onSubmit={handleAddSubmit}>
+            <form className="mt-4 sm:mt-5 space-y-3 sm:space-y-4" onSubmit={handleAddSubmit}>
               <JobFormFields data={formData} onChange={setFormData} />
 
               {formError && (
@@ -458,18 +461,18 @@ export default function AdminJobsPage() {
                 </p>
               )}
 
-              <div className="flex justify-end gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:justify-end pt-2">
                 <button
                   type="button"
                   onClick={closeAddModal}
-                  className="rounded-full border border-[#dadada] px-5 py-2.5 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8]"
+                  className="w-full sm:w-auto rounded-full border border-[#dadada] px-4 sm:px-5 py-2.5 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8]"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={isSaving}
-                  className="rounded-full bg-[#f28c28] px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
+                  className="w-full sm:w-auto rounded-full bg-[#f28c28] px-4 sm:px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
                 >
                   {isSaving ? "Saving..." : "Add Job"}
                 </button>
@@ -481,19 +484,19 @@ export default function AdminJobsPage() {
 
       {/* ── Edit Job Modal ──────────────────────────────────────────────────── */}
       {showEditModal && editingJob && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-6">
-          <div className="relative w-full max-w-xl rounded-3xl bg-white p-6 shadow-2xl sm:p-8">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-4 sm:py-6">
+          <div className="relative w-full max-w-sm sm:max-w-xl rounded-2xl sm:rounded-3xl bg-white p-4 sm:p-6 shadow-2xl max-h-[90vh] overflow-y-auto">
             <button
               onClick={closeEditModal}
-              className="absolute right-4 top-4 rounded-full p-2 text-[#777] transition hover:bg-[#f5f5f5]"
+              className="absolute right-3 top-3 sm:right-4 sm:top-4 rounded-full p-1.5 sm:p-2 text-[#777] transition hover:bg-[#f5f5f5]"
             >
-              <X className="h-5 w-5" />
+              <X className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
 
-            <h2 className="text-xl font-semibold text-[#333]">Edit Job</h2>
-            <p className="mt-1 text-sm text-[#888]">Update the details for this role.</p>
+            <h2 className="text-lg sm:text-xl font-semibold text-[#333]">Edit Job</h2>
+            <p className="mt-1 text-xs sm:text-sm text-[#888]">Update the details for this role.</p>
 
-            <form className="mt-5 space-y-4" onSubmit={handleEditSubmit}>
+            <form className="mt-4 sm:mt-5 space-y-3 sm:space-y-4" onSubmit={handleEditSubmit}>
               <JobFormFields data={editForm} onChange={setEditForm} />
 
               {editError && (
@@ -502,18 +505,18 @@ export default function AdminJobsPage() {
                 </p>
               )}
 
-              <div className="flex justify-end gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:justify-end pt-2">
                 <button
                   type="button"
                   onClick={closeEditModal}
-                  className="rounded-full border border-[#dadada] px-5 py-2.5 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8]"
+                  className="w-full sm:w-auto rounded-full border border-[#dadada] px-4 sm:px-5 py-2.5 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8]"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={isEditSaving}
-                  className="rounded-full bg-[#f28c28] px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
+                  className="w-full sm:w-auto rounded-full bg-[#f28c28] px-4 sm:px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
                 >
                   {isEditSaving ? "Saving..." : "Save Changes"}
                 </button>
@@ -525,23 +528,23 @@ export default function AdminJobsPage() {
 
       {/* ── Delete Confirm ──────────────────────────────────────────────────── */}
       {deleteTarget && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-          <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-2xl">
-            <h3 className="text-lg font-semibold text-[#333]">Delete Job?</h3>
-            <p className="mt-2 text-sm text-[#666]">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-4 sm:py-6">
+          <div className="w-full max-w-sm rounded-2xl bg-white p-4 sm:p-6 shadow-2xl">
+            <h3 className="text-base sm:text-lg font-semibold text-[#333]">Delete Job?</h3>
+            <p className="mt-2 text-xs sm:text-sm text-[#666]">
               Are you sure you want to delete <strong>{deleteTarget.title}</strong>? This cannot be undone.
             </p>
-            <div className="mt-5 flex justify-end gap-3">
+            <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row gap-2 sm:gap-3 sm:justify-end">
               <button
                 onClick={cancelDelete}
-                className="rounded-full border border-[#dadada] px-5 py-2 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8]"
+                className="w-full sm:w-auto rounded-full border border-[#dadada] px-4 sm:px-5 py-2.5 text-sm font-medium text-[#666] transition hover:bg-[#f8f8f8]"
               >
                 Cancel
               </button>
               <button
                 onClick={handleDelete}
                 disabled={isDeleting}
-                className="rounded-full bg-red-500 px-5 py-2 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
+                className="w-full sm:w-auto rounded-full bg-red-500 px-4 sm:px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
               >
                 {isDeleting ? "Deleting..." : "Delete"}
               </button>
