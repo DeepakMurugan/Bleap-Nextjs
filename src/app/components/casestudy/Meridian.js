@@ -1,12 +1,14 @@
 import Image from "next/image";
 
-import heroChartImg from "../../assets/blogs/nah.png";
-import aboutImg from "../../assets/blogs/narab.png";
-import uxUiImg from "../../assets/blogs/narc1.png";
-import seoImg from "../../assets/blogs/narc2.jpg";
-import localSeoImg from "../../assets/blogs/narc3.jpg";
-import linkedinImg from "../../assets/blogs/narc4.jpg";
-import reviewAvatarImg from "../../assets/blogs/narc5.png";
+import heroChartImg from "../../assets/blogs/mh.png";
+import result from "../../assets/blogs/f1.png";
+
+import aboutImg from "../../assets/blogs/ma.png";
+import uxUiImg from "../../assets/blogs/ll.png";
+import seoImg from "../../assets/blogs/ll2.png";
+import localSeoImg from "../../assets/blogs/d.jpg";
+import linkedinImg from "../../assets/blogs/f3.png";
+import reviewAvatarImg from "../../assets/blogs/f2.png";
 
 import c1 from "../../assets/blogs/ca1.png";
 import c2 from "../../assets/blogs/ca2.png";
@@ -285,7 +287,7 @@ export default function MeridianCaseStudy() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    className="h-[170px] w-full object-cover"
+                    className="h-[170px] w-full object-contain"
                   />
                 </div>
 
@@ -348,11 +350,11 @@ export default function MeridianCaseStudy() {
               </p>
             </div>
 
-            <div className="overflow-hidden bg-white shadow-sm">
+            <div className="overflow-hidden ">
               <Image
                 src={localSeoImg}
                 alt="Off page strategy visual"
-                className="h-[180px] w-full object-cover"
+                className=" h-full object-contain"
               />
             </div>
           </div>
@@ -399,7 +401,7 @@ export default function MeridianCaseStudy() {
 
           <div className="mt-6 overflow-hidden rounded-[8px] border border-[#dfd7cf] bg-white p-3 shadow-sm">
             <Image
-              src={heroChartImg}
+              src={result}
               alt="Traffic trend graph"
               className="h-auto w-full object-contain"
             />

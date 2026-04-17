@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 /* ✅ Replace with your real portfolio images (JS import) */
-import p1 from "../../assets/blogs/c1.png";
+import p1 from "../../assets/blogs/cc2.png";
 import p2 from "../../assets/blogs/c2.png";
-import p3 from "../../assets/blogs/c3.png";
+import p3 from "../../assets/blogs/cc1.png";
 import p4 from "../../assets/blogs/c4.png";
 
 const PORTFOLIO = [
@@ -18,7 +18,7 @@ const PORTFOLIO = [
   },
 
   {
-    title: "Sundaram Motors -  Marcdez benz",
+    title: "Meridian Hospital ",
     chips: ["Website Revamp", "SEO", "Google Business Profile Optimization"],
     img: p1,
     href: "/casestudy/meridian",
@@ -31,6 +31,16 @@ const PORTFOLIO = [
      chips: ["Performance", "SEO"],
     img: p2,
     href: "/casestudy/whitecaps",
+  },
+
+    {
+    title: "Dr.Mehta's Hospital",
+    chips: ["Website Revamp", "Website", "Branding"],
+    img: p3,
+    href: "/casestudy/mehta",//    
+     chips: ["Website Revamp","Performance", "SEO"],
+    img: p3,
+    href: "/casestudy/mehta",
   },
 
 
