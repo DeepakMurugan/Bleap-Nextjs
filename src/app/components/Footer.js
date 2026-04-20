@@ -229,13 +229,14 @@ import Image from "next/image"; */}
               Services
             </h4>
             <ul className="mt-4 sm:mt-5 md:mt-6 space-y-2 sm:space-y-3 text-[15px] sm:text-[16px] text-[#FFFFFF] font-normal">
-              <li><Link className="hover:text-[#FF6E00]" href="/services/seo-service-in-chennai">Search Engine Optimisation (SEO)</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="/services/ppc-service-in-chennai">Pay Per Click (PPC)</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="/services/website-design-service-in-chennai">Website Design (UX/UI)</Link></li>
+              <li><Link className="hover:text-[#FF6E00]" href="/services/seo-service-in-chennai">Search Engine Optimisation</Link></li>
+              <li><Link className="hover:text-[#FF6E00]" href="/services/ppc-service-in-chennai">Pay Per Click </Link></li>
+                            <li><Link className="hover:text-[#FF6E00]" href="/services/social-media-marketing-in-chennai">Social Media Marketing </Link></li>
+
+              <li><Link className="hover:text-[#FF6E00]" href="/services/website-design-service-in-chennai">Website Design </Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/website-development-service-in-chennai">Website Development</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/graphic-design-service-in-chennai">Graphic Designing</Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/video-editing-service-in-chennai">Video Editing</Link></li>
-              <li><Link className="hover:text-[#FF6E00]" href="/services/social-media-marketing-in-chennai">Social Media Marketing </Link></li>
               <li><Link className="hover:text-[#FF6E00]" href="/services/email-marketing-in-chennai">Email Marketing</Link></li>
             </ul>
           </div>
