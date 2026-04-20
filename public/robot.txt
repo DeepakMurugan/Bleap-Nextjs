@@ -1,4 +1,4 @@
-User-agent: *
-Allow: /
 
-Sitemap: https://www.bleap.in/sitemap.xml
+
+User-agent: *
+Disallow: /wp-admin/

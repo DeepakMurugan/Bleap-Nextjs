@@ -6,6 +6,8 @@ import LatestBlogsSection from "./components/common/LatestBlogsSection";
 import DarkServicesScroll5 from "./components/common/DarkServicesScroll5";
 import PortfolioGrid from "./components/common/PortfolioGrid";
 import TestimonialsMosaic from "./components/common/TestimonialsMosaic";
+// import PremiumChatbot from "./components/common/PremiumChatbot";
+
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -67,6 +69,7 @@ export default function Home() {
       
       <LatestBlogsSection />
       <FaqSection items={FAQS} />
+      {/* <PremiumChatbot /> */}
     </>
   );
 }
