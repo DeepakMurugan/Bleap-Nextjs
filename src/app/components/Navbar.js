@@ -10,7 +10,7 @@ const servicesMenu = [
     { label: "PPC", href: "/services/ppc-service-in-chennai" },
   { label: "SEO", href: "/services/seo-service-in-chennai" },
 
-  { label: "Social", href: "/services/social-media-marketing-in-chennai" },
+  { label: "SMM", href: "/services/social-media-marketing-in-chennai" },
   { label: "Graphic", href: "/services/graphic-design-service-in-chennai" },
   { label: "Web Design", href: "/services/website-design-service-in-chennai" },
    { label: "Email Marketing", href: "/services/email-marketing-in-chennai" },
